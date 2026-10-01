@@ -168,35 +168,28 @@ if (startDate && endDate) {
    TOUR ENQUIRY BUTTONS
 ========================================= */
 
-const tourButtons =
-    document.querySelectorAll(".tour-enquiry");
-
+const tourButtons = document.querySelectorAll(".tour-enquiry");
 
 tourButtons.forEach(button => {
 
-    button.addEventListener("click", () => {
+    button.addEventListener("click", function () {
 
-        const tourName =
-            button.getAttribute("data-tour");
+        const tourName = this.getAttribute("data-tour");
 
-        const destinationField =
-            document.getElementById("destination");
+        const tourPages = {
+            "Royal Rajasthan Tour": "rajasthan-tour.html",
+            "Golden Triangle Tour": "golden-triangle-tour.html",
+            "Kashmir Valley Escape": "kashmir-tour.html",
+            "Delhi Agra Getaway": "delhi-agra-tour.html",
+            "Himachal Mountain Tour": "himachal-tour.html",
+            "Spiritual India Tour": "varanasi-tour.html" ,
+            "Char dham tour": "char-dham-yatra.html"
+        };
 
-        if (destinationField) {
+        const page = tourPages[tourName];
 
-            destinationField.value = tourName;
-
-        }
-
-        const enquirySection =
-            document.getElementById("enquiry");
-
-        if (enquirySection) {
-
-            enquirySection.scrollIntoView({
-                behavior: "smooth"
-            });
-
+        if (page) {
+            window.location.href = page;
         }
 
     });
