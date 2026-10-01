@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rajasthan Heritage Tour | Krishna Travelers India</title>
+
+<meta name="description" content="Explore Rajasthan with Krishna Travelers India on a private and customizable heritage tour covering Jaipur, Mandawa, Bikaner, Jodhpur, Kumbhalgarh, Udaipur and more.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    color:#263238;
+    background:#fff;
+    line-height:1.7;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* TOP BAR */
+.top{
+    background:#173b35;
+    color:#fff;
+    padding:9px 5%;
+    display:flex;
+    justify-content:space-between;
+    font-size:14px;
+}
+
+/* NAVBAR */
+nav{
+    position:sticky;
+    top:0;
+    z-index:20;
+    background:#fff;
+    box-shadow:0 2px 14px rgba(0,0,0,.12);
+    padding:15px 5%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:800;
+    color:#b47a2c;
+}
+
+.logo span{
+    color:#173b35;
+}
+
+.navlinks{
+    display:flex;
+    gap:25px;
+    align-items:center;
+}
+
+.navlinks a:hover{
+    color:#b47a2c;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    background:#b47a2c;
+    color:#fff;
+    padding:12px 22px;
+    border-radius:5px;
+    font-weight:700;
+    border:0;
+    cursor:pointer;
+}
+
+/* HERO */
+.hero{
+    min-height:480px;
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1800&q=85");
+
+    background-position:center;
+    background-size:cover;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+    color:#fff;
+    padding:50px 6%;
+}
+
+.hero h1{
+    font-size:54px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:850px;
+    margin:auto;
+}
+
+/* CONTAINER */
+.container{
+    width:90%;
+    max-width:1180px;
+    margin:auto;
+}
+
+/* QUICK INFO */
+.quick{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    background:#fff;
+
+    box-shadow:0 6px 25px rgba(0,0,0,.15);
+
+    border-radius:8px;
+
+    margin:-45px auto 55px;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.quick div{
+    padding:22px;
+    border-right:1px solid #eee;
+    text-align:center;
+}
+
+.quick div:last-child{
+    border:0;
+}
+
+.quick b{
+    display:block;
+    color:#173b35;
+    margin-bottom:5px;
+}
+
+/* SECTION */
+.section{
+    padding:35px 0 65px;
+}
+
+.section h2{
+    font-size:34px;
+    color:#173b35;
+    margin-bottom:15px;
+}
+
+.section h3{
+    color:#b47a2c;
+    margin-bottom:8px;
+}
+
+/* MAIN GRID */
+.grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:35px;
+}
+
+/* CARD */
+.card{
+    background:#fff;
+    border-radius:9px;
+    box-shadow:0 3px 18px rgba(0,0,0,.08);
+    padding:25px;
+    margin-bottom:20px;
+}
+
+/* HIGHLIGHTS */
+.highlights{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin-top:25px;
+}
+
+.highlight{
+    background:#f5f0e7;
+    padding:18px;
+    text-align:center;
+    border-radius:8px;
+    font-weight:700;
+}
+
+/* SIDEBAR */
+.sidebar{
+    position:sticky;
+    top:90px;
+    height:max-content;
+}
+
+.quote{
+    background:#173b35;
+    color:#fff;
+    padding:25px;
+    border-radius:9px;
+}
+
+.quote h3{
+    color:#fff;
+    font-size:24px;
+}
+
+/* ITINERARY */
+.itinerary{
+    border-left:3px solid #b47a2c;
+    padding-left:22px;
+}
+
+.day{
+    margin-bottom:25px;
+}
+
+.day h3{
+    font-size:19px;
+}
+
+/* INCLUSIONS */
+.incgrid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.inc,
+.exc{
+    padding:25px;
+    border-radius:8px;
+}
+
+.inc{
+    background:#eef7f1;
+}
+
+.exc{
+    background:#fff3ed;
+}
+
+ul{
+    padding-left:20px;
+}
+
+/* ENQUIRY */
+.enquiry{
+    background:#f5f0e7;
+    padding:45px 6%;
+    margin-top:20px;
+}
+
+.form{
+    max-width:950px;
+    margin:auto;
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 20px rgba(0,0,0,.08);
+}
+
+.formgrid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.form input,
+.form select,
+.form textarea{
+    width:100%;
+    padding:13px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    font:inherit;
+}
+
+.form textarea{
+    min-height:120px;
+    grid-column:1/-1;
+}
+
+/* FOOTER */
+footer{
+    background:#102c28;
+    color:#ddd;
+    padding:45px 5% 25px;
+}
+
+.footgrid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:35px;
+}
+
+.footgrid h3{
+    color:#fff;
+    margin-bottom:12px;
+}
+
+.copyright{
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,.15);
+    margin-top:30px;
+    padding-top:20px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+    position:fixed;
+    right:22px;
+    bottom:22px;
+
+    background:#25d366;
+    color:#fff;
+
+    padding:14px 20px;
+
+    border-radius:50px;
+
+    font-weight:800;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.25);
+
+    z-index:50;
+}
+
+/* MOBILE */
+@media(max-width:800px){
+
+    .top{
+        font-size:12px;
+        gap:10px;
+    }
+
+    .navlinks{
+        display:none;
+    }
+
+    .hero{
+        min-height:410px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .quick{
+        grid-template-columns:1fr 1fr;
+        margin-top:-25px;
+    }
+
+    .quick div{
+        border-bottom:1px solid #eee;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .sidebar{
+        position:static;
+    }
+
+    .highlights{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .incgrid,
+    .formgrid,
+    .footgrid{
+        grid-template-columns:1fr;
+    }
+
+    .form textarea{
+        grid-column:auto;
+    }
+}
+
+@media(max-width:480px){
+
+    .quick,
+    .highlights{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:31px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .container{
+        width:92%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top">
+
+    <div>
+        India Travel Specialists · Private & Custom Tours
+    </div>
+
+    <div>
+        Call / WhatsApp: +91 85879 94018
+    </div>
+
+</div>
+
+
+<!-- NAVIGATION -->
+<nav>
+
+    <div class="logo">
+        Krishna <span>Travelers India</span>
+    </div>
+
+    <div class="navlinks">
+
+        <a href="index.html">Home</a>
+
+        <a href="#overview">
+            Overview
+        </a>
+
+        <a href="#itinerary">
+            Itinerary
+        </a>
+
+        <a href="#inclusions">
+            Inclusions
+        </a>
+
+        <a href="#enquiry" class="btn">
+            Get a Quote
+        </a>
+
+    </div>
+
+</nav>
+
+
+<!-- HERO -->
+<section class="hero">
+
+    <div>
+
+        <h1>
+            Rajasthan Heritage Tour
+        </h1>
+
+        <p>
+            Discover royal forts, colourful bazaars, magnificent havelis,
+            desert landscapes and the living heritage of Rajasthan with
+            a comfortable private journey.
+        </p>
+
+        <br>
+
+        <a href="#enquiry" class="btn">
+            Plan This Tour
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- QUICK TOUR INFO -->
+<div class="container">
+
+    <div class="quick">
+
+        <div>
+            <b>14 Nights / 15 Days</b>
+            Duration
+        </div>
+
+        <div>
+            <b>Private Tour</b>
+            Travel Style
+        </div>
+
+        <div>
+            <b>Customizable</b>
+            Your Pace
+        </div>
+
+        <div>
+            <b>Price on Request</b>
+            Personalized Quote
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- OVERVIEW -->
+<section class="section" id="overview">
+
+<div class="container">
+
+<div class="grid">
+
+<main>
+
+    <h2>
+        Tour Overview
+    </h2>
+
+    <p>
+        Experience the many faces of Rajasthan on a thoughtfully planned
+        heritage journey. From the historic streets of Delhi and the royal
+        atmosphere of Jaipur to the painted havelis of Mandawa, grand forts
+        of Bikaner and Jodhpur, village experiences and the romantic lakes
+        of Udaipur, this itinerary combines history, culture and local
+        experiences.
+    </p>
+
+    <p style="margin-top:15px">
+
+        The journey can be adjusted according to your travel dates,
+        hotel preference, interests and group size. Krishna Travelers India
+        provides private transportation and assistance throughout the tour.
+
+    </p>
+
+
+    <h2 style="margin-top:40px">
+        Tour Highlights
+    </h2>
+
+
+    <div class="highlights">
+
+        <div class="highlight">
+            Delhi Heritage
+        </div>
+
+        <div class="highlight">
+            Jaipur & Amber Fort
+        </div>
+
+        <div class="highlight">
+            Mandawa Havelis
+        </div>
+
+        <div class="highlight">
+            Bikaner Forts
+        </div>
+
+        <div class="highlight">
+            Desert Culture
+        </div>
+
+        <div class="highlight">
+            Jodhpur Blue City
+        </div>
+
+        <div class="highlight">
+            Kumbhalgarh Fort
+        </div>
+
+        <div class="highlight">
+            Udaipur Lakes
+        </div>
+
+    </div>
+
+</main>
+
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+
+    <div class="quote">
+
+        <h3>
+            Plan Your Rajasthan Trip
+        </h3>
+
+        <p style="margin:12px 0 20px">
+
+            Tell us your dates and group size.
+            We will prepare a personalized itinerary
+            and quotation.
+
+        </p>
+
+        <a href="#enquiry"
+           class="btn"
+           style="background:#fff;color:#173b35">
+
+            Get Custom Quote
+
+        </a>
+
+        <p style="margin-top:18px">
+
+            WhatsApp:
+            +91 85879 94018
+
+        </p>
+
+    </div>
+
+</aside>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ITINERARY -->
+<section class="section"
+         id="itinerary"
+         style="background:#fafafa">
+
+<div class="container">
+
+<h2>
+    Day-by-Day Itinerary
+</h2>
+
+
+<div class="card itinerary">
+
+
+<div class="day">
+
+<h3>
+    Day 01 – Arrival in Delhi
+</h3>
+
+<p>
+    Airport pickup and transfer to your hotel.
+    After check-in and rest, enjoy an optional evening
+    exploration of Old Delhi and its colourful markets.
+    Overnight in Delhi.
+</p>
+
+</div>
+
+
+<div class="day">
+
+<h3>
+    Day 02 – Delhi Sightseeing
+</h3>
+
+<p>
+    Explore Old and New Delhi including Red Fort,
+    Jama Masjid, India Gate, Humayun's Tomb and Qutub Minar.
+    Evening at leisure. Overnight in Delhi.
+</p>
+
+</div>
+
+
+<div class="day">
+
+<h3>
+    Day 03 – Delhi to Jaipur
+</h3>
+
+<p>
+    Drive to Jaipur, the Pink City. After check-in,
+    visit City Palace, Jantar Mantar and Hawa Mahal,
+    followed by free time in the local markets.
+</p>
+
+</div>
+
+
+<div class="day">
+
+<h3>
+    Day 04 – Jaipur & Samode
+</h3>
+
+<p>
+    Visit Amber Fort and continue towards Samode.
+    Enjoy the peaceful village surroundings and experience
+    local Rajasthani culture.
+</p>
+
+</div>
+
+
+<div class="day">
+
+<h3>
+    Day 05 – Samode to Mandawa
+</h3>
+
+<p>
+    Drive to Mandawa, famous for its beautifully painted
+    havelis. Explore the old town, frescoes and traditional
+    architecture.
+</p>
+
+</div>
+
+
+<div class="day">
+
+<h3>
+    Day 06 – Mandawa to Bikaner
+</h3>
+
+<p>
+    Continue to Bikaner. Visit Junagarh Fort and other
+    heritage attractions, with optional local market exploration.
+</p>
+
+</div>
+
+
+<div class="day">
+
+<h3>
+    Day 07 – Bikaner to Manvar
+</h3>
+
+<p>
+    Drive towards the desert region of Rajasthan.
+    Relax at your stay and enjoy the changing landscape
+    and local surroundings.
+</p>
+
+</div>
+
+
+<div class="day">
+
+<h3>
+    Day 08 – Manvar to Rohet
+</h3>
+
+<p>
+    Continue to Rohet and experience rural Rajasthan.
+    An optional jeep safari through nearby villages
+    can be arranged.
+</p>
+
+</div>
+
+
+<div class="day">
+
+<h3>
+    Day 09 – Rohet to Kumbhalgarh
+</h3>
+
+<p>
+    Drive to Kumbhalgarh and explore the magnificent
+    Kumbhalgarh Fort and surrounding Aravalli landscape.
+</p>
+
+</div>
+
+
+<div class="day">
+
+<h3>
+    Day 10 – Kumbhalgarh to Udaipur
+</h3>
+
+<p>
+    Proceed to Udaipur, the City of Lakes. Visit City Palace,
+    Jagdish Temple and other cultural attractions.
+</p>
+
+</div>
+
+
+<div class="day">
+
+<h3>
+    Day 11 – Udaipur Exploration
+</h3>
+
+<p>
+    Enjoy a relaxed day exploring Udaipur. Optional visits
+    include Eklingji and Nagda temples, followed by a boat
+    ride on Lake Pichola.
+</p>
+
+</div>
+
+
+<div class="day">
+
+<h3>
+    Day 12 – Udaipur to Dungarpur
+</h3>
+
+<p>
+    Travel to Dungarpur and discover its palaces,
+    temples, museum and local markets.
+</p>
+
+</div>
+
+
+<div class="day">
+
+<h3>
+    Day 13 – Dungarpur to Ahmedabad
+</h3>
+
+<p>
+    Continue to Ahmedabad. Explore selected heritage
+    and cultural attractions such as Gandhi Ashram
+    and the historic old city.
+</p>
+
+</div>
+
+
+<div class="day">
+
+<h3>
+    Day 14 – Ahmedabad to Mumbai
+</h3>
+
+<p>
+    Free time for local shopping before onward travel
+    to Mumbai. On arrival, explore selected Mumbai
+    highlights depending on your flight timing.
+</p>
+
+</div>
+
+
+<div class="day">
+
+<h3>
+    Day 15 – Departure
+</h3>
+
+<p>
+    After breakfast, transfer to Mumbai airport for your
+    onward flight. Your Rajasthan heritage journey ends
+    with Krishna Travelers India.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- INCLUSIONS -->
+<section class="section"
+         id="inclusions">
+
+<div class="container">
+
+<h2>
+    Inclusions & Exclusions
+</h2>
+
+
+<div class="incgrid">
+
+
+<div class="inc">
+
+<h3>
+    What's Included
+</h3>
+
+<ul>
+
+<li>
+    Accommodation as per selected hotel category
+</li>
+
+<li>
+    Daily breakfast at hotels
+</li>
+
+<li>
+    Airport / railway station assistance
+</li>
+
+<li>
+    Private air-conditioned vehicle for transfers and sightseeing
+</li>
+
+<li>
+    Experienced driver
+</li>
+
+<li>
+    Fuel, toll taxes and parking
+</li>
+
+<li>
+    Driver allowances and applicable vehicle expenses
+</li>
+
+<li>
+    Mineral water during transfers
+</li>
+
+<li>
+    Trip planning and tour assistance
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="exc">
+
+<h3>
+    What's Not Included
+</h3>
+
+<ul>
+
+<li>
+    Domestic or international flight tickets
+</li>
+
+<li>
+    Monument and attraction entry fees
+</li>
+
+<li>
+    Guide charges unless selected
+</li>
+
+<li>
+    Personal expenses and shopping
+</li>
+
+<li>
+    Laundry, beverages and meals not mentioned
+</li>
+
+<li>
+    Tips and gratuities
+</li>
+
+<li>
+    Travel insurance
+</li>
+
+<li>
+    Anything not specifically mentioned under inclusions
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ENQUIRY -->
+<section class="enquiry"
+         id="enquiry">
+
+<div class="form">
+
+<h2>
+    Get Your Personalized Rajasthan Itinerary
+</h2>
+
+<p style="margin-bottom:25px">
+
+    Send your travel details and Krishna Travelers India
+    will contact you with a customized plan and quotation.
+
+</p>
+
+
+<form onsubmit="sendWhatsApp(event)">
+
+<div class="formgrid">
+
+<input
+    id="name"
+    required
+    placeholder="Your Name *"
+>
+
+<input
+    id="phone"
+    required
+    placeholder="WhatsApp / Phone *"
+>
+
+<input
+    id="email"
+    type="email"
+    placeholder="Email Address"
+>
+
+<input
+    id="date"
+    type="date"
+>
+
+<select id="adults">
+
+<option>
+    Adults
+</option>
+
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5+</option>
+
+</select>
+
+
+<select id="children">
+
+<option>
+    Children
+</option>
+
+<option>0</option>
+<option>1</option>
+<option>2</option>
+<option>3+</option>
+
+</select>
+
+
+<select id="hotel">
+
+<option>
+    Preferred Hotel Category
+</option>
+
+<option>
+    3 Star
+</option>
+
+<option>
+    4 Star
+</option>
+
+<option>
+    5 Star
+</option>
+
+<option>
+    Luxury / Heritage
+</option>
+
+</select>
+
+
+<textarea
+    id="message"
+    placeholder="Special requests, places you want to add, pickup city, etc."
+></textarea>
+
+</div>
+
+
+<br>
+
+<button
+    class="btn"
+    type="submit"
+>
+
+Request My Itinerary →
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+<div class="footgrid">
+
+
+<div>
+
+<h3>
+    Krishna Travelers India
+</h3>
+
+<p>
+
+    Private and customized India tours for families,
+    couples and groups. Explore Rajasthan, Delhi,
+    Agra, Jaipur, Udaipur, Himachal and more with
+    comfortable travel arrangements.
+
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+    Quick Links
+</h3>
+
+<p>
+    <a href="index.html">
+        Home
+    </a>
+</p>
+
+<p>
+    <a href="#overview">
+        Overview
+    </a>
+</p>
+
+<p>
+    <a href="#itinerary">
+        Itinerary
+    </a>
+</p>
+
+<p>
+    <a href="#enquiry">
+        Get a Quote
+    </a>
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+    Contact
+</h3>
+
+<p>
+    +91 85879 94018
+</p>
+
+<p>
+    info@krishnatravelers.in
+</p>
+
+<p>
+    C-4/53, Yamuna Vihar,
+    <br>
+    Delhi - 110053
+</p>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Krishna Travelers India.
+All Rights Reserved.
+
+</div>
+
+</footer>
+
+
+<!-- WHATSAPP -->
+<a
+    class="whatsapp"
+    href="https://wa.me/918587994018?text=Hello%20Krishna%20Travelers%20India,%20I%20want%20details%20for%20the%20Rajasthan%20Heritage%20Tour."
+    target="_blank"
+>
+    💬 WhatsApp
+</a>
+
+
+<!-- JAVASCRIPT -->
+<script>
+
+function sendWhatsApp(e){
+
+    e.preventDefault();
+
+    const name =
+        document.getElementById("name").value;
+
+    const phone =
+        document.getElementById("phone").value;
+
+    const email =
+        document.getElementById("email").value;
+
+    const date =
+        document.getElementById("date").value;
+
+    const adults =
+        document.getElementById("adults").value;
+
+    const children =
+        document.getElementById("children").value;
+
+    const hotel =
+        document.getElementById("hotel").value;
+
+    const message =
+        document.getElementById("message").value;
+
+
+    const text =
+`Hello Krishna Travelers India,
+
+I want a quotation for Rajasthan Heritage Tour.
+
+Name: ${name}
+Phone: ${phone}
+Email: ${email}
+Travel Date: ${date}
+Adults: ${adults}
+Children: ${children}
+Hotel: ${hotel}
+Special Request: ${message}`;
+
+
+    window.open(
+        "https://wa.me/918587994018?text=" +
+        encodeURIComponent(text),
+        "_blank"
+    );
+
+}
+
+</script>
+
+</body>
+</html>

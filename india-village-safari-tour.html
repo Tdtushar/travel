@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>India Village Safari Tour | Krishna Travelers India</title>
+
+<meta name="description" content="Experience rural India with our 14 Nights 15 Days Village Safari Tour covering Delhi, Rajasthan villages, Udaipur, Jaipur and Agra.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#333;
+    line-height:1.7;
+    background:#fff;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.topbar{
+    background:#173b35;
+    color:#fff;
+    padding:10px 6%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:14px;
+}
+
+.navbar{
+    background:#fff;
+    position:sticky;
+    top:0;
+    z-index:999;
+    box-shadow:0 2px 10px rgba(0,0,0,.12);
+}
+
+.nav-inner{
+    max-width:1200px;
+    margin:auto;
+    padding:16px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:25px;
+    font-weight:bold;
+    color:#173b35;
+}
+
+.logo span{
+    color:#b47729;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+    font-weight:600;
+    color:#173b35;
+}
+
+.nav-links a:hover{
+    color:#b47729;
+}
+
+.hero{
+    min-height:500px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+    position:relative;
+    background:
+    linear-gradient(rgba(0,0,0,.48),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1532664189809-02133fee698d?auto=format&fit=crop&w=1800&q=85")
+    center/cover no-repeat;
+}
+
+.hero-content{
+    max-width:850px;
+    padding:40px 20px;
+}
+
+.hero h1{
+    font-size:52px;
+    line-height:1.15;
+    margin-bottom:18px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:28px;
+}
+
+.btn{
+    display:inline-block;
+    background:#b47729;
+    color:#fff;
+    padding:13px 27px;
+    border-radius:5px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#8d5b1e;
+    transform:translateY(-2px);
+}
+
+.container{
+    max-width:1150px;
+    margin:auto;
+    padding:70px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title h2{
+    color:#173b35;
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#777;
+}
+
+.quick-info{
+    max-width:1050px;
+    margin:-45px auto 0;
+    position:relative;
+    z-index:5;
+    background:#fff;
+    box-shadow:0 8px 30px rgba(0,0,0,.14);
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    border-radius:8px;
+    overflow:hidden;
+}
+
+.info-box{
+    padding:25px 15px;
+    text-align:center;
+    border-right:1px solid #eee;
+}
+
+.info-box:last-child{
+    border-right:none;
+}
+
+.info-box h3{
+    color:#173b35;
+    font-size:17px;
+    margin-bottom:6px;
+}
+
+.info-box p{
+    color:#777;
+    font-size:14px;
+}
+
+.route{
+    background:#f7f4ee;
+    padding:25px;
+    border-left:5px solid #b47729;
+    margin-top:25px;
+    font-size:16px;
+}
+
+.route strong{
+    color:#173b35;
+}
+
+.two-col{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:45px;
+}
+
+.content h2{
+    color:#173b35;
+    font-size:30px;
+    margin-bottom:18px;
+}
+
+.content p{
+    margin-bottom:18px;
+}
+
+.sidebar{
+    background:#f6f6f6;
+    padding:30px;
+    border-radius:8px;
+    height:max-content;
+    position:sticky;
+    top:100px;
+}
+
+.sidebar h3{
+    color:#173b35;
+    margin-bottom:18px;
+    font-size:22px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    padding:10px 0;
+    border-bottom:1px solid #ddd;
+}
+
+.sidebar li::before{
+    content:"✓";
+    color:#b47729;
+    font-weight:bold;
+    margin-right:10px;
+}
+
+.highlight-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.highlight{
+    background:#fff;
+    padding:28px 20px;
+    border-radius:8px;
+    text-align:center;
+    box-shadow:0 4px 18px rgba(0,0,0,.08);
+    border-top:4px solid #b47729;
+}
+
+.highlight .icon{
+    font-size:35px;
+    margin-bottom:12px;
+}
+
+.highlight h3{
+    color:#173b35;
+    margin-bottom:8px;
+}
+
+.experience{
+    background:#173b35;
+    color:#fff;
+}
+
+.experience .section-title h2,
+.experience .section-title p{
+    color:#fff;
+}
+
+.experience-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.exp-box{
+    background:rgba(255,255,255,.08);
+    padding:30px;
+    border-radius:8px;
+}
+
+.exp-box h3{
+    color:#e0b56e;
+    margin-bottom:10px;
+}
+
+.itinerary{
+    max-width:950px;
+    margin:auto;
+}
+
+.day{
+    border-left:4px solid #b47729;
+    padding:0 0 30px 28px;
+    margin-bottom:25px;
+    position:relative;
+}
+
+.day::before{
+    content:"";
+    width:14px;
+    height:14px;
+    background:#b47729;
+    border-radius:50%;
+    position:absolute;
+    left:-9px;
+    top:3px;
+}
+
+.day h3{
+    color:#173b35;
+    font-size:21px;
+    margin-bottom:8px;
+}
+
+.day p{
+    color:#555;
+}
+
+.inc-exc{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.list-box{
+    padding:35px;
+    border-radius:8px;
+    background:#f7f7f7;
+}
+
+.list-box h3{
+    color:#173b35;
+    font-size:25px;
+    margin-bottom:20px;
+}
+
+.list-box ul{
+    list-style:none;
+}
+
+.list-box li{
+    padding:9px 0;
+    border-bottom:1px solid #ddd;
+}
+
+.included li::before{
+    content:"✓";
+    color:green;
+    font-weight:bold;
+    margin-right:10px;
+}
+
+.excluded li::before{
+    content:"×";
+    color:#b47729;
+    font-weight:bold;
+    margin-right:10px;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.why{
+    text-align:center;
+    padding:25px;
+    background:#fff;
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+    border-radius:8px;
+}
+
+.why h3{
+    color:#173b35;
+    margin:10px 0;
+}
+
+.enquiry{
+    background:#f7f4ee;
+}
+
+.form{
+    max-width:900px;
+    margin:auto;
+    background:#fff;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 5px 25px rgba(0,0,0,.1);
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.form-group{
+    margin-bottom:5px;
+}
+
+.form-group.full{
+    grid-column:1/-1;
+}
+
+.form label{
+    display:block;
+    margin-bottom:7px;
+    font-weight:bold;
+    color:#173b35;
+}
+
+.form input,
+.form select,
+.form textarea{
+    width:100%;
+    padding:13px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    font-family:inherit;
+    font-size:15px;
+}
+
+.form textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+.submit-btn{
+    margin-top:20px;
+    width:100%;
+    border:none;
+    cursor:pointer;
+    font-size:17px;
+}
+
+footer{
+    background:#102c28;
+    color:#fff;
+    padding:50px 20px 20px;
+}
+
+.footer-grid{
+    max-width:1150px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:40px;
+}
+
+footer h3{
+    color:#e0b56e;
+    margin-bottom:15px;
+}
+
+footer p,
+footer li{
+    color:#ddd;
+    font-size:14px;
+    margin-bottom:8px;
+}
+
+footer ul{
+    list-style:none;
+}
+
+.footer-bottom{
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,.15);
+    margin-top:35px;
+    padding-top:20px;
+    font-size:13px;
+    color:#bbb;
+}
+
+.whatsapp{
+    position:fixed;
+    right:22px;
+    bottom:22px;
+    width:58px;
+    height:58px;
+    background:#25D366;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:29px;
+    box-shadow:0 4px 15px rgba(0,0,0,.3);
+    z-index:1000;
+}
+
+@media(max-width:900px){
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .quick-info{
+        grid-template-columns:1fr 1fr;
+        margin:20px;
+    }
+
+    .info-box:nth-child(2){
+        border-right:none;
+    }
+
+    .two-col{
+        grid-template-columns:1fr;
+    }
+
+    .sidebar{
+        position:static;
+    }
+
+    .highlight-grid,
+    .why-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .experience-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    .topbar{
+        flex-direction:column;
+        gap:5px;
+        text-align:center;
+    }
+
+    .nav-inner{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .nav-links{
+        gap:12px;
+        flex-wrap:wrap;
+        justify-content:center;
+        font-size:13px;
+    }
+
+    .hero{
+        min-height:450px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .quick-info{
+        grid-template-columns:1fr;
+    }
+
+    .info-box{
+        border-right:none;
+        border-bottom:1px solid #eee;
+    }
+
+    .highlight-grid,
+    .why-grid,
+    .inc-exc,
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .form-group.full{
+        grid-column:auto;
+    }
+
+    .container{
+        padding:50px 18px;
+    }
+
+    .section-title h2{
+        font-size:28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+    <div>Krishna Travelers India | Private & Customized Tours</div>
+    <div>📞 +91 85879 94018 &nbsp; | &nbsp; ✉ info@krishnatravelers.in</div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-inner">
+
+        <div class="logo">
+            Krishna <span>Travelers India</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#overview">Overview</a>
+            <a href="#itinerary">Itinerary</a>
+            <a href="#inclusions">Inclusions</a>
+            <a href="#enquire">Enquire</a>
+        </div>
+
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>India Village Safari Tour</h1>
+
+        <p>
+            Discover the traditional lifestyle, villages, heritage,
+            culture and royal cities of Rajasthan and North India.
+        </p>
+
+        <a href="#enquire" class="btn">Plan Your Village Safari</a>
+
+    </div>
+
+</section>
+
+<!-- QUICK INFO -->
+<div class="quick-info">
+
+    <div class="info-box">
+        <h3>14 Nights / 15 Days</h3>
+        <p>Complete Village Safari</p>
+    </div>
+
+    <div class="info-box">
+        <h3>11 Destinations</h3>
+        <p>Villages & Royal Cities</p>
+    </div>
+
+    <div class="info-box">
+        <h3>Private Tour</h3>
+        <p>Comfortable AC Vehicle</p>
+    </div>
+
+    <div class="info-box">
+        <h3>Customizable</h3>
+        <p>Designed Around You</p>
+    </div>
+
+</div>
+
+<!-- OVERVIEW -->
+<section id="overview" class="container">
+
+    <div class="section-title">
+        <h2>Village Safari Tour of India</h2>
+        <p>Experience the real colours of rural Rajasthan</p>
+    </div>
+
+    <div class="two-col">
+
+        <div class="content">
+
+            <h2>Explore Rural India Beyond the Cities</h2>
+
+            <p>
+                Step away from the usual tourist routes and experience
+                the traditional side of India through our Village Safari Tour.
+                This journey combines rural communities, heritage properties,
+                ancient temples, forts, local markets and royal cities.
+            </p>
+
+            <p>
+                From the colourful villages of Rajasthan to the historic
+                streets of Jaipur, Udaipur, Delhi and Agra, this itinerary
+                offers an opportunity to experience India's diverse culture
+                in a more personal way.
+            </p>
+
+            <p>
+                Enjoy village excursions, local interactions, traditional
+                architecture, countryside landscapes and the heritage of
+                Rajasthan while travelling comfortably in a private vehicle.
+            </p>
+
+            <div class="route">
+                <strong>Tour Route:</strong><br>
+                Delhi → Alsisar → Gajner → Osian → Rohetgarh →
+                Kumbhalgarh → Udaipur → Deogarh → Samode →
+                Jaipur → Agra
+            </div>
+
+        </div>
+
+        <aside class="sidebar">
+
+            <h3>Destinations Covered</h3>
+
+            <ul>
+                <li>Delhi</li>
+                <li>Alsisar</li>
+                <li>Gajner</li>
+                <li>Osian</li>
+                <li>Rohetgarh</li>
+                <li>Kumbhalgarh</li>
+                <li>Udaipur</li>
+                <li>Deogarh</li>
+                <li>Samode</li>
+                <li>Jaipur</li>
+                <li>Agra</li>
+            </ul>
+
+        </aside>
+
+    </div>
+
+</section>
+
+<!-- HIGHLIGHTS -->
+<section class="container" style="background:#fafafa; max-width:100%;">
+
+    <div class="section-title">
+        <h2>Tour Highlights</h2>
+        <p>What makes this journey special</p>
+    </div>
+
+    <div class="highlight-grid" style="max-width:1150px;margin:auto;">
+
+        <div class="highlight">
+            <div class="icon">🌾</div>
+            <h3>Village Life</h3>
+            <p>
+                Discover traditional rural lifestyles and countryside
+                communities of Rajasthan.
+            </p>
+        </div>
+
+        <div class="highlight">
+            <div class="icon">🏰</div>
+            <h3>Royal Forts</h3>
+            <p>
+                Explore magnificent forts and historic heritage properties.
+            </p>
+        </div>
+
+        <div class="highlight">
+            <div class="icon">🕌</div>
+            <h3>Culture & Temples</h3>
+            <p>
+                Experience colourful traditions, temples and local markets.
+            </p>
+        </div>
+
+        <div class="highlight">
+            <div class="icon">🚙</div>
+            <h3>Private Travel</h3>
+            <p>
+                Travel comfortably with your own private vehicle and driver.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- EXPERIENCE -->
+<section class="experience">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Authentic India Experiences</h2>
+            <p>See India from a different perspective</p>
+        </div>
+
+        <div class="experience-grid">
+
+            <div class="exp-box">
+                <h3>🌾 Rural Rajasthan</h3>
+                <p>
+                    Travel through peaceful countryside landscapes and
+                    discover the everyday life of Rajasthan's villages.
+                </p>
+            </div>
+
+            <div class="exp-box">
+                <h3>🍛 Local Traditions</h3>
+                <p>
+                    Experience regional food, traditional customs,
+                    colourful markets and local hospitality.
+                </p>
+            </div>
+
+            <div class="exp-box">
+                <h3>🎭 Heritage & Culture</h3>
+                <p>
+                    Combine village experiences with historic forts,
+                    palaces, temples and India's famous cultural cities.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ITINERARY -->
+<section id="itinerary" class="container">
+
+    <div class="section-title">
+        <h2>15 Days Village Safari Itinerary</h2>
+        <p>A carefully planned journey through rural and royal India</p>
+    </div>
+
+    <div class="itinerary">
+
+        <div class="day">
+            <h3>Day 01 – Arrival in Delhi</h3>
+            <p>
+                Arrive in Delhi and meet our representative. Transfer to
+                your hotel and relax. Later, explore a local market or enjoy
+                some free time in India's capital city.
+            </p>
+        </div>
+
+        <div class="day">
+            <h3>Day 02 – Delhi to Alsisar</h3>
+            <p>
+                After breakfast, drive towards Alsisar in Rajasthan.
+                En-route, explore attractions around Bikaner and Deshnok.
+                Continue to Alsisar and experience the local surroundings.
+            </p>
+        </div>
+
+        <div class="day">
+            <h3>Day 03 – Alsisar to Gajner</h3>
+            <p>
+                Travel towards Gajner. After check-in, explore the heritage
+                surroundings, temples, lake area and local attractions.
+                Evening at leisure.
+            </p>
+        </div>
+
+        <div class="day">
+            <h3>Day 04 – Gajner to Osian</h3>
+            <p>
+                Drive towards Osian, an ancient temple town of Rajasthan.
+                Visit important temples and enjoy an evening walk through
+                the local market.
+            </p>
+        </div>
+
+        <div class="day">
+            <h3>Day 05 – Osian to Rohetgarh</h3>
+            <p>
+                Continue towards Rohetgarh. Check in and explore the
+                heritage surroundings. Visit the historic Rohetgarh Fort
+                and enjoy the peaceful atmosphere.
+            </p>
+        </div>
+
+        <div class="day">
+            <h3>Day 06 – Rohetgarh to Kumbhalgarh</h3>
+            <p>
+                Drive to Kumbhalgarh and explore one of Rajasthan's most
+                impressive fort complexes. Enjoy the surrounding Aravalli
+                landscapes.
+            </p>
+        </div>
+
+        <div class="day">
+            <h3>Day 07 – Kumbhalgarh to Udaipur</h3>
+            <p>
+                Visit the historic Haldighati region before continuing
+                towards Udaipur. Check in and enjoy free time in the
+                evening.
+            </p>
+        </div>
+
+        <div class="day">
+            <h3>Day 08 – Udaipur Sightseeing</h3>
+            <p>
+                Explore Udaipur including Saheliyon Ki Bari, Jagdish Temple,
+                local cultural attractions and the old city. In the evening,
+                enjoy a relaxing boat ride on Lake Pichola.
+            </p>
+        </div>
+
+        <div class="day">
+            <h3>Day 09 – Udaipur to Deogarh</h3>
+            <p>
+                Travel to Deogarh. After check-in, enjoy a village excursion
+                and experience the surrounding countryside, local culture
+                and traditional lifestyle.
+            </p>
+        </div>
+
+        <div class="day">
+            <h3>Day 10 – Deogarh to Samode</h3>
+            <p>
+                Continue to Samode, known for its heritage atmosphere and
+                traditional Rajasthan setting. Explore Samode Fort and
+                surrounding village areas.
+            </p>
+        </div>
+
+        <div class="day">
+            <h3>Day 11 – Samode to Jaipur</h3>
+            <p>
+                Enjoy a relaxed morning at Samode. Later, drive to Jaipur,
+                the famous Pink City of Rajasthan. Check in and spend the
+                evening at leisure.
+            </p>
+        </div>
+
+        <div class="day">
+            <h3>Day 12 – Jaipur Sightseeing</h3>
+            <p>
+                Full-day Jaipur sightseeing covering Amber Fort, City Palace,
+                Jantar Mantar and other important attractions. Evening free
+                for shopping in Jaipur's colourful markets.
+            </p>
+        </div>
+
+        <div class="day">
+            <h3>Day 13 – Jaipur to Agra</h3>
+            <p>
+                Enjoy a relaxed morning before driving to Agra. Arrive in
+                the evening, check in at the hotel and relax.
+            </p>
+        </div>
+
+        <div class="day">
+            <h3>Day 14 – Agra to Delhi</h3>
+            <p>
+                Visit the magnificent Taj Mahal in the morning. Later,
+                explore Agra Fort and other heritage attractions before
+                continuing towards Delhi.
+            </p>
+        </div>
+
+        <div class="day">
+            <h3>Day 15 – Delhi Departure</h3>
+            <p>
+                After breakfast, transfer to Delhi airport for your onward
+                flight. Your Village Safari journey comes to an end with
+                memorable experiences of rural and royal India.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- INCLUSIONS -->
+<section id="inclusions" class="container">
+
+    <div class="section-title">
+        <h2>Inclusions & Exclusions</h2>
+        <p>Know what is included in your tour plan</p>
+    </div>
+
+    <div class="inc-exc">
+
+        <div class="list-box included">
+
+            <h3>✓ Tour Inclusions</h3>
+
+            <ul>
+                <li>Accommodation on double-sharing basis</li>
+                <li>Daily breakfast at hotels</li>
+                <li>Arrival and departure assistance</li>
+                <li>Professional English-speaking driver</li>
+                <li>Private air-conditioned vehicle</li>
+                <li>Airport pickup and drop</li>
+                <li>Private sightseeing and transfers</li>
+                <li>Mineral water during road journeys</li>
+                <li>Toll tax and parking charges</li>
+                <li>Driver expenses</li>
+                <li>Applicable taxes</li>
+            </ul>
+
+        </div>
+
+        <div class="list-box excluded">
+
+            <h3>× Tour Exclusions</h3>
+
+            <ul>
+                <li>International or domestic airfare</li>
+                <li>Monument and park entry tickets</li>
+                <li>Camera/video fees where applicable</li>
+                <li>Personal expenses</li>
+                <li>Laundry and telephone expenses</li>
+                <li>Tips and gratuities</li>
+                <li>Meals other than specified</li>
+                <li>Travel insurance</li>
+                <li>Expenses caused by delays or natural calamities</li>
+                <li>Anything not mentioned in inclusions</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- WHY US -->
+<section class="container" style="background:#fafafa;max-width:100%;">
+
+    <div class="section-title">
+        <h2>Why Travel With Krishna Travelers India?</h2>
+        <p>Comfort, flexibility and personal travel assistance</p>
+    </div>
+
+    <div class="why-grid" style="max-width:1150px;margin:auto;">
+
+        <div class="why">
+            <div style="font-size:35px;">🚙</div>
+            <h3>Private Vehicle</h3>
+            <p>
+                Comfortable private transportation throughout your journey.
+            </p>
+        </div>
+
+        <div class="why">
+            <div style="font-size:35px;">🗺️</div>
+            <h3>Customized Tours</h3>
+            <p>
+                Modify destinations, hotels and experiences according to
+                your requirements.
+            </p>
+        </div>
+
+        <div class="why">
+            <div style="font-size:35px;">🤝</div>
+            <h3>Travel Assistance</h3>
+            <p>
+                Support during your tour from arrival to departure.
+            </p>
+        </div>
+
+        <div class="why">
+            <div style="font-size:35px;">⭐</div>
+            <h3>Personal Service</h3>
+            <p>
+                Carefully planned journeys for couples, families and groups.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ENQUIRY -->
+<section id="enquire" class="enquiry">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Plan Your Village Safari</h2>
+            <p>Send us your requirements and get a customized quote</p>
+        </div>
+
+        <form class="form" id="tourForm">
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label>Your Name *</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Phone / WhatsApp *</label>
+                    <input type="tel" id="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="email">
+                </div>
+
+                <div class="form-group">
+                    <label>Travel Date</label>
+                    <input type="date" id="date">
+                </div>
+
+                <div class="form-group">
+                    <label>Adults</label>
+                    <select id="adults">
+                        <option>1</option>
+                        <option selected>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7+</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Children</label>
+                    <select id="children">
+                        <option selected>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4+</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Hotel Category</label>
+                    <select id="hotel">
+                        <option>3 Star</option>
+                        <option selected>4 Star</option>
+                        <option>5 Star</option>
+                        <option>Heritage Hotels</option>
+                        <option>Luxury / Premium</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Tour Type</label>
+                    <select id="tourtype">
+                        <option>Private Tour</option>
+                        <option>Family Tour</option>
+                        <option>Couple Tour</option>
+                        <option>Group Tour</option>
+                    </select>
+                </div>
+
+                <div class="form-group full">
+                    <label>Special Requirements</label>
+                    <textarea id="message" placeholder="Tell us about your requirements..."></textarea>
+                </div>
+
+            </div>
+
+            <button type="submit" class="btn submit-btn">
+                Send Enquiry on WhatsApp
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-grid">
+
+        <div>
+            <h3>Krishna Travelers India</h3>
+
+            <p>
+                Private and customized India tours designed for travellers
+                looking for comfortable transportation, authentic experiences
+                and flexible itineraries.
+            </p>
+
+            <p>
+                📍 C-4/53, Yamuna Vihar, Delhi - 110053
+            </p>
+
+            <p>
+                📞 +91 85879 94018
+            </p>
+
+            <p>
+                ✉ info@krishnatravelers.in
+            </p>
+        </div>
+
+        <div>
+            <h3>Popular Tours</h3>
+
+            <ul>
+                <li><a href="golden-triangle-tour.html">Golden Triangle Tour</a></li>
+                <li><a href="rajasthan-tour.html">Royal Rajasthan Tour</a></li>
+                <li><a href="kashmir-tour.html">Kashmir Valley Escape</a></li>
+                <li><a href="himachal-tour.html">Himachal Mountain Tour</a></li>
+                <li><a href="udaipur-tour.html">Udaipur Tour</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#overview">Tour Overview</a></li>
+                <li><a href="#itinerary">Itinerary</a></li>
+                <li><a href="#inclusions">Inclusions</a></li>
+                <li><a href="#enquire">Contact Us</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Krishna Travelers India. All Rights Reserved.
+    </div>
+
+</footer>
+
+<!-- WHATSAPP BUTTON -->
+<a class="whatsapp"
+   href="https://wa.me/918587994018"
+   target="_blank"
+   title="Chat on WhatsApp">
+    ☎
+</a>
+
+<script>
+
+document.getElementById("tourForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const email = document.getElementById("email").value;
+    const date = document.getElementById("date").value;
+    const adults = document.getElementById("adults").value;
+    const children = document.getElementById("children").value;
+    const hotel = document.getElementById("hotel").value;
+    const tourtype = document.getElementById("tourtype").value;
+    const message = document.getElementById("message").value;
+
+    const whatsappMessage =
+`Hello Krishna Travelers India,
+
+I would like to enquire about the India Village Safari Tour.
+
+Name: ${name}
+Phone: ${phone}
+Email: ${email}
+Travel Date: ${date}
+Adults: ${adults}
+Children: ${children}
+Hotel Category: ${hotel}
+Tour Type: ${tourtype}
+
+Special Requirements:
+${message}
+
+Please send me the best package and quotation.`;
+
+    const whatsappURL =
+    "https://wa.me/918587994018?text=" +
+    encodeURIComponent(whatsappMessage);
+
+    window.open(whatsappURL, "_blank");
+
+});
+
+</script>
+
+</body>
+</html>

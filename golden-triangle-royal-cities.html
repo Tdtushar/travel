@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Golden Triangle Tour with Royal Cities | Krishna Travelers India</title>
+
+<meta name="description" content="Explore Delhi, Agra, Jaipur and the royal cities of Rajasthan on a private Golden Triangle tour with Krishna Travelers India.">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    color:#333;
+    line-height:1.7;
+    background:#fff;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* TOP BAR */
+
+.topbar{
+    background:#173b35;
+    color:#fff;
+    padding:9px 5%;
+    display:flex;
+    justify-content:space-between;
+    font-size:14px;
+}
+
+/* NAVIGATION */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:#fff;
+    box-shadow:0 2px 15px rgba(0,0,0,.12);
+
+    padding:15px 5%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:800;
+    color:#b47729;
+}
+
+.logo span{
+    color:#173b35;
+}
+
+.navlinks{
+    display:flex;
+    gap:25px;
+    align-items:center;
+}
+
+.navlinks a:hover{
+    color:#b47729;
+}
+
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+    background:#b47729;
+    color:#fff;
+
+    padding:12px 22px;
+
+    border-radius:5px;
+
+    border:0;
+
+    cursor:pointer;
+
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#925d19;
+}
+
+/* HERO */
+
+.hero{
+
+    min-height:500px;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.55)
+    ),
+    url("https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1800&q=85");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    color:#fff;
+
+    padding:60px 7%;
+}
+
+.hero h1{
+    font-size:52px;
+    line-height:1.2;
+    margin-bottom:18px;
+}
+
+.hero p{
+    max-width:900px;
+    margin:auto;
+    font-size:19px;
+}
+
+/* CONTAINER */
+
+.container{
+    width:90%;
+    max-width:1180px;
+    margin:auto;
+}
+
+/* QUICK INFO */
+
+.quickinfo{
+
+    margin:-45px auto 55px;
+
+    position:relative;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    background:#fff;
+
+    border-radius:8px;
+
+    box-shadow:0 6px 25px rgba(0,0,0,.15);
+
+    overflow:hidden;
+}
+
+.quickbox{
+
+    text-align:center;
+
+    padding:22px;
+
+    border-right:1px solid #eee;
+}
+
+.quickbox:last-child{
+    border-right:0;
+}
+
+.quickbox strong{
+
+    display:block;
+
+    color:#173b35;
+
+    margin-bottom:4px;
+}
+
+/* SECTION */
+
+.section{
+    padding:35px 0 65px;
+}
+
+.section-title{
+
+    font-size:34px;
+
+    color:#173b35;
+
+    margin-bottom:18px;
+}
+
+/* GRID */
+
+.main-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:35px;
+}
+
+/* CARD */
+
+.card{
+
+    background:#fff;
+
+    padding:28px;
+
+    border-radius:9px;
+
+    box-shadow:0 3px 18px rgba(0,0,0,.08);
+
+    margin-bottom:22px;
+}
+
+/* ROUTE */
+
+.route{
+
+    background:#f5f0e7;
+
+    border-left:4px solid #b47729;
+
+    padding:18px;
+
+    margin-top:20px;
+
+    font-weight:bold;
+
+    color:#173b35;
+}
+
+/* HIGHLIGHTS */
+
+.highlights{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:14px;
+
+    margin-top:20px;
+}
+
+.highlight{
+
+    background:#f5f0e7;
+
+    padding:15px;
+
+    border-radius:7px;
+
+    font-weight:bold;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+
+    position:sticky;
+
+    top:90px;
+
+    height:max-content;
+}
+
+.quote{
+
+    background:#173b35;
+
+    color:#fff;
+
+    padding:28px;
+
+    border-radius:9px;
+}
+
+.quote h3{
+
+    font-size:25px;
+
+    margin-bottom:10px;
+}
+
+.quote .btn{
+
+    background:#fff;
+
+    color:#173b35;
+
+    margin-top:15px;
+}
+
+/* ITINERARY */
+
+.itinerary{
+
+    border-left:3px solid #b47729;
+
+    padding-left:24px;
+}
+
+.day{
+
+    margin-bottom:30px;
+}
+
+.day h3{
+
+    color:#173b35;
+
+    margin-bottom:7px;
+
+    font-size:20px;
+}
+
+.day h3 span{
+
+    color:#b47729;
+}
+
+/* INCLUSIONS */
+
+.inc-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:25px;
+}
+
+.inc-box,
+.exc-box{
+
+    padding:28px;
+
+    border-radius:8px;
+}
+
+.inc-box{
+
+    background:#edf7ef;
+}
+
+.exc-box{
+
+    background:#fff1eb;
+}
+
+.inc-box h3,
+.exc-box h3{
+
+    color:#173b35;
+
+    margin-bottom:12px;
+}
+
+ul{
+    padding-left:20px;
+}
+
+/* WHY US */
+
+.why{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:15px;
+}
+
+.whybox{
+
+    background:#f5f0e7;
+
+    padding:22px;
+
+    text-align:center;
+
+    border-radius:7px;
+}
+
+.whybox strong{
+
+    display:block;
+
+    color:#173b35;
+
+    margin-bottom:5px;
+}
+
+/* ENQUIRY */
+
+.enquiry{
+
+    background:#f5f0e7;
+
+    padding:55px 5%;
+}
+
+.form{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    background:#fff;
+
+    padding:32px;
+
+    border-radius:10px;
+
+    box-shadow:0 4px 20px rgba(0,0,0,.1);
+}
+
+.form h2{
+
+    color:#173b35;
+
+    margin-bottom:8px;
+}
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:15px;
+
+    margin-top:20px;
+}
+
+.form input,
+.form select,
+.form textarea{
+
+    width:100%;
+
+    padding:13px;
+
+    border:1px solid #ddd;
+
+    border-radius:5px;
+
+    font:inherit;
+}
+
+.form textarea{
+
+    grid-column:1/-1;
+
+    min-height:120px;
+}
+
+/* FOOTER */
+
+footer{
+
+    background:#102c28;
+
+    color:#ddd;
+
+    padding:45px 5% 20px;
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:35px;
+}
+
+footer h3{
+
+    color:#fff;
+
+    margin-bottom:12px;
+}
+
+.copyright{
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    margin-top:30px;
+
+    padding-top:20px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:20px;
+
+    z-index:200;
+
+    background:#25d366;
+
+    color:#fff;
+
+    padding:14px 20px;
+
+    border-radius:50px;
+
+    font-weight:bold;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.25);
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+    .topbar{
+        font-size:12px;
+        gap:10px;
+    }
+
+    .navlinks{
+        display:none;
+    }
+
+    .hero{
+        min-height:430px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .main-grid{
+        grid-template-columns:1fr;
+    }
+
+    .sidebar{
+        position:static;
+    }
+
+    .quickinfo{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .quickbox{
+        border-bottom:1px solid #eee;
+    }
+
+    .why{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .inc-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:500px){
+
+    .hero h1{
+        font-size:30px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .quickinfo{
+        grid-template-columns:1fr;
+    }
+
+    .quickbox{
+        border-right:0;
+    }
+
+    .highlights{
+        grid-template-columns:1fr;
+    }
+
+    .why{
+        grid-template-columns:1fr;
+    }
+
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .form textarea{
+        grid-column:auto;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+
+    <div>
+        Private India Tours · Golden Triangle Specialists
+    </div>
+
+    <div>
+        📞 +91 85879 94018
+    </div>
+
+</div>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <div class="logo">
+        Krishna <span>Travelers India</span>
+    </div>
+
+    <div class="navlinks">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="#overview">
+            Overview
+        </a>
+
+        <a href="#itinerary">
+            Itinerary
+        </a>
+
+        <a href="#inclusions">
+            Inclusions
+        </a>
+
+        <a href="#enquiry" class="btn">
+            Get a Quote
+        </a>
+
+    </div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div>
+
+        <h1>
+            Golden Triangle Tour with Royal Cities
+        </h1>
+
+        <p>
+            Discover the historic charm of Delhi, the Taj Mahal
+            of Agra and the royal heritage of Jaipur, combined
+            with the magnificent cities and cultural treasures
+            of Rajasthan.
+        </p>
+
+        <br>
+
+        <a href="#enquiry" class="btn">
+            Plan Your Tour
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- QUICK INFO -->
+
+<div class="container">
+
+    <div class="quickinfo">
+
+        <div class="quickbox">
+            <strong>12 Nights / 13 Days</strong>
+            Duration
+        </div>
+
+        <div class="quickbox">
+            <strong>Private Tour</strong>
+            Travel Style
+        </div>
+
+        <div class="quickbox">
+            <strong>Delhi → Delhi</strong>
+            Start & End
+        </div>
+
+        <div class="quickbox">
+            <strong>Price on Request</strong>
+            Personalized Quote
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- OVERVIEW -->
+
+<section class="section" id="overview">
+
+<div class="container">
+
+<div class="main-grid">
+
+<main>
+
+
+<div class="card">
+
+<h2 class="section-title">
+    Tour Overview
+</h2>
+
+<p>
+    Experience India's famous Golden Triangle together with
+    some of Rajasthan's most fascinating royal cities.
+    This private journey brings together historic monuments,
+    magnificent forts, colourful bazaars, traditional culture
+    and unforgettable landscapes.
+</p>
+
+<p style="margin-top:15px">
+
+    Starting in Delhi, the journey continues to Agra and Jaipur
+    before exploring the heritage cities of Jodhpur, Udaipur
+    and Pushkar. The itinerary can be customized according to
+    your travel dates, hotel category and interests.
+
+</p>
+
+<div class="route">
+
+    Delhi → Agra → Jaipur → Jodhpur →
+    Udaipur → Pushkar → Delhi
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h2 class="section-title">
+    Tour Highlights
+</h2>
+
+<div class="highlights">
+
+<div class="highlight">
+    🕌 Historic Delhi
+</div>
+
+<div class="highlight">
+    🏛️ Taj Mahal, Agra
+</div>
+
+<div class="highlight">
+    🏰 Amber Fort, Jaipur
+</div>
+
+<div class="highlight">
+    👑 City Palace
+</div>
+
+<div class="highlight">
+    🌆 Blue City of Jodhpur
+</div>
+
+<div class="highlight">
+    🏞️ Udaipur Lakes
+</div>
+
+<div class="highlight">
+    🛕 Pushkar Heritage
+</div>
+
+<div class="highlight">
+    🛍️ Rajasthan Shopping
+</div>
+
+</div>
+
+</div>
+
+</main>
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+<div class="quote">
+
+<h3>
+    Get a Quick Quote
+</h3>
+
+<p>
+
+Tell us your dates, group size
+and hotel preference.
+
+</p>
+
+<a href="#enquiry" class="btn">
+    Send Enquiry
+</a>
+
+<p style="margin-top:18px">
+📞 +91 85879 94018
+</p>
+
+<p>
+📧 info@krishnatravelers.in
+</p>
+
+</div>
+
+</aside>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ITINERARY -->
+
+<section class="section"
+style="background:#fafafa"
+id="itinerary">
+
+<div class="container">
+
+<h2 class="section-title">
+    Detailed Tour Itinerary
+</h2>
+
+
+<div class="card itinerary">
+
+
+<div class="day">
+
+<h3>
+    <span>Day 01</span> – Arrival in Delhi
+</h3>
+
+<p>
+    Meet our representative at Delhi airport and transfer
+    to your hotel. After check-in, relax or enjoy an evening
+    introduction to Delhi depending on your arrival time.
+</p>
+
+</div>
+
+
+<div class="day">
+
+<h3>
+    <span>Day 02</span> – Delhi Sightseeing
+</h3>
+
+<p>
+    Explore Old and New Delhi including Red Fort,
+    Jama Masjid, Raj Ghat, India Gate, Humayun's Tomb
+    and Qutub Minar. Return to the hotel after sightseeing.
+</p>
+
+</div>
+
+
+<div class="day">
+
+<h3>
+    <span>Day 03</span> – Delhi to Agra
+</h3>
+
+<p>
+    Drive to Agra. On arrival visit Agra Fort and
+    explore the historic surroundings. Evening at leisure
+    or optional local market visit.
+</p>
+
+</div>
+
+
+<div class="day">
+
+<h3>
+    <span>Day 04</span> – Agra to Jaipur
+</h3>
+
+<p>
+    Enjoy an early morning visit to the Taj Mahal.
+    Later drive towards Jaipur with a stop at Fatehpur Sikri,
+    the impressive former Mughal capital.
+</p>
+
+</div>
+
+
+<div class="day">
+
+<h3>
+    <span>Day 05</span> – Jaipur Heritage Sightseeing
+</h3>
+
+<p>
+    Explore Amber Fort, Jal Mahal, City Palace,
+    Jantar Mantar and Hawa Mahal. Evening is available
+    for shopping in Jaipur's colourful markets.
+</p>
+
+</div>
+
+
+<div class="day">
+
+<h3>
+    <span>Day 06</span> – Jaipur to Jodhpur
+</h3>
+
+<p>
+    Drive towards Jodhpur through the Rajasthan countryside.
+    On arrival explore the old city and its famous blue-painted
+    houses.
+</p>
+
+</div>
+
+
+<div class="day">
+
+<h3>
+    <span>Day 07</span> – Jodhpur Sightseeing
+</h3>
+
+<p>
+    Visit the magnificent Mehrangarh Fort and Jaswant Thada.
+    Later explore the Clock Tower market and old city streets.
+</p>
+
+</div>
+
+
+<div class="day">
+
+<h3>
+    <span>Day 08</span> – Jodhpur to Udaipur
+</h3>
+
+<p>
+    Travel towards Udaipur through the Aravalli landscape.
+    Optional sightseeing stops can be arranged en route.
+    Arrive in Udaipur and relax.
+</p>
+
+</div>
+
+
+<div class="day">
+
+<h3>
+    <span>Day 09</span> – Udaipur Sightseeing
+</h3>
+
+<p>
+    Explore City Palace, Jagdish Temple, Saheliyon Ki Bari
+    and the beautiful lakes of Udaipur. Enjoy an optional
+    evening boat ride on Lake Pichola.
+</p>
+
+</div>
+
+
+<div class="day">
+
+<h3>
+    <span>Day 10</span> – Udaipur to Pushkar
+</h3>
+
+<p>
+    Drive to Pushkar. Visit Pushkar Lake and Brahma Temple
+    and explore the colourful local markets and narrow streets.
+</p>
+
+</div>
+
+
+<div class="day">
+
+<h3>
+    <span>Day 11</span> – Pushkar to Jaipur
+</h3>
+
+<p>
+    Return towards Jaipur. Enjoy free time for shopping,
+    handicrafts and local Rajasthani products.
+</p>
+
+</div>
+
+
+<div class="day">
+
+<h3>
+    <span>Day 12</span> – Jaipur to Delhi
+</h3>
+
+<p>
+    After breakfast, drive back to Delhi. Depending on
+    your schedule, enjoy some free time in Delhi for shopping
+    or additional sightseeing.
+</p>
+
+</div>
+
+
+<div class="day">
+
+<h3>
+    <span>Day 13</span> – Departure from Delhi
+</h3>
+
+<p>
+    Transfer to Delhi airport or railway station according
+    to your onward travel schedule. Your Golden Triangle
+    and Royal Cities journey ends here.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- INCLUSIONS -->
+
+<section class="section" id="inclusions">
+
+<div class="container">
+
+<h2 class="section-title">
+    Tour Inclusions & Exclusions
+</h2>
+
+
+<div class="inc-grid">
+
+
+<div class="inc-box">
+
+<h3>
+    What's Included
+</h3>
+
+<ul>
+
+<li>
+    Hotel accommodation according to selected category
+</li>
+
+<li>
+    Daily breakfast
+</li>
+
+<li>
+    Private air-conditioned vehicle
+</li>
+
+<li>
+    Airport and railway station transfers
+</li>
+
+<li>
+    Experienced English-speaking driver
+</li>
+
+<li>
+    Fuel, toll taxes and parking
+</li>
+
+<li>
+    Driver allowance
+</li>
+
+<li>
+    Sightseeing as per itinerary
+</li>
+
+<li>
+    Travel planning assistance
+</li>
+
+<li>
+    Mineral water during road journeys
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="exc-box">
+
+<h3>
+    What's Not Included
+</h3>
+
+<ul>
+
+<li>
+    Domestic and international flights
+</li>
+
+<li>
+    Monument entrance tickets
+</li>
+
+<li>
+    Professional guide charges
+</li>
+
+<li>
+    Personal expenses
+</li>
+
+<li>
+    Lunch and dinner unless mentioned
+</li>
+
+<li>
+    Laundry and telephone expenses
+</li>
+
+<li>
+    Tips and gratuities
+</li>
+
+<li>
+    Travel insurance
+</li>
+
+<li>
+    Camera fees where applicable
+</li>
+
+<li>
+    Anything not specifically mentioned in inclusions
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WHY BOOK -->
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+    Why Choose Krishna Travelers India?
+</h2>
+
+<div class="why">
+
+<div class="whybox">
+
+<strong>
+    Private Travel
+</strong>
+
+Comfortable vehicle and
+dedicated driver for your journey.
+
+</div>
+
+
+<div class="whybox">
+
+<strong>
+    Custom Itinerary
+</strong>
+
+Add or remove destinations
+according to your interests.
+
+</div>
+
+
+<div class="whybox">
+
+<strong>
+    Heritage Experiences
+</strong>
+
+Explore India's historic cities,
+forts and palaces.
+
+</div>
+
+
+<div class="whybox">
+
+<strong>
+    Personal Assistance
+</strong>
+
+Travel support from planning
+throughout your journey.
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ENQUIRY -->
+
+<section class="enquiry" id="enquiry">
+
+<div class="form">
+
+<h2>
+    Get a Quick Reply
+</h2>
+
+<p>
+    Share your travel details and we will prepare
+    a personalized Golden Triangle & Royal Cities itinerary.
+</p>
+
+
+<form onsubmit="sendWhatsApp(event)">
+
+<div class="form-grid">
+
+<input
+    id="name"
+    type="text"
+    placeholder="Your Name *"
+    required
+>
+
+<input
+    id="phone"
+    type="tel"
+    placeholder="WhatsApp / Phone *"
+    required
+>
+
+<input
+    id="email"
+    type="email"
+    placeholder="Email Address"
+>
+
+<input
+    id="date"
+    type="date"
+>
+
+<select id="adults">
+
+<option value="">
+    Adults
+</option>
+
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5+</option>
+
+</select>
+
+
+<select id="children">
+
+<option value="">
+    Children
+</option>
+
+<option>0</option>
+<option>1</option>
+<option>2</option>
+<option>3+</option>
+
+</select>
+
+
+<select id="hotel">
+
+<option>
+    Hotel Category
+</option>
+
+<option>
+    3 Star
+</option>
+
+<option>
+    4 Star
+</option>
+
+<option>
+    5 Star
+</option>
+
+<option>
+    Heritage / Luxury
+</option>
+
+</select>
+
+
+<textarea
+    id="message"
+    placeholder="Tell us your preferred destinations, travel style or special requirements..."
+></textarea>
+
+</div>
+
+<br>
+
+<button
+    type="submit"
+    class="btn"
+>
+    Send Enquiry on WhatsApp →
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-grid">
+
+
+<div>
+
+<h3>
+    Krishna Travelers India
+</h3>
+
+<p>
+
+Private and customized India tours
+for families, couples and groups.
+
+Explore Delhi, Agra, Jaipur,
+Rajasthan and other destinations
+with comfortable private travel.
+
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+    Quick Links
+</h3>
+
+<p>
+<a href="index.html">Home</a>
+</p>
+
+<p>
+<a href="#overview">Overview</a>
+</p>
+
+<p>
+<a href="#itinerary">Itinerary</a>
+</p>
+
+<p>
+<a href="#inclusions">Inclusions</a>
+</p>
+
+<p>
+<a href="#enquiry">Get a Quote</a>
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+    Contact Us
+</h3>
+
+<p>
+📞 +91 85879 94018
+</p>
+
+<p>
+📧 info@krishnatravelers.in
+</p>
+
+<p>
+C-4/53, Yamuna Vihar,
+<br>
+Delhi - 110053
+</p>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Krishna Travelers India.
+All Rights Reserved.
+
+</div>
+
+</footer>
+
+
+<!-- WHATSAPP -->
+
+<a
+    href="https://wa.me/918587994018?text=Hello%20Krishna%20Travelers%20India,%20I%20want%20details%20about%20the%20Golden%20Triangle%20Tour%20with%20Royal%20Cities."
+    target="_blank"
+    class="whatsapp"
+>
+    💬 WhatsApp
+</a>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+function sendWhatsApp(event){
+
+    event.preventDefault();
+
+    const name =
+        document.getElementById("name").value;
+
+    const phone =
+        document.getElementById("phone").value;
+
+    const email =
+        document.getElementById("email").value;
+
+    const date =
+        document.getElementById("date").value;
+
+    const adults =
+        document.getElementById("adults").value;
+
+    const children =
+        document.getElementById("children").value;
+
+    const hotel =
+        document.getElementById("hotel").value;
+
+    const message =
+        document.getElementById("message").value;
+
+
+    const text =
+`Hello Krishna Travelers India,
+
+I want a quotation for the Golden Triangle Tour with Royal Cities.
+
+Name: ${name}
+Phone: ${phone}
+Email: ${email}
+Travel Date: ${date}
+Adults: ${adults}
+Children: ${children}
+Hotel Category: ${hotel}
+
+Special Requirements:
+${message}`;
+
+
+    window.open(
+        "https://wa.me/918587994018?text=" +
+        encodeURIComponent(text),
+        "_blank"
+    );
+
+}
+
+</script>
+
+
+</body>
+</html>

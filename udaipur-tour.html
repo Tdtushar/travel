@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Udaipur Tour Package - Explore the City of Lakes with Krishna Travelers India. Customizable private Udaipur tour packages with comfortable vehicles and local sightseeing.">
+<meta name="keywords" content="Udaipur tour package, Udaipur tour, Udaipur sightseeing, City Palace Udaipur, Lake Pichola, Krishna Travelers India">
+<title>Udaipur Tour Package | Krishna Travelers India</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#252525;background:#fff;line-height:1.65}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{width:min(1180px,92%);margin:auto}
+
+/* TOP BAR */
+.topbar{background:#111;color:#fff;font-size:14px}
+.topbar .container{display:flex;justify-content:space-between;align-items:center;padding:9px 0}
+.topbar a{color:#fff}
+.top-left,.top-right{display:flex;gap:22px;align-items:center}
+
+/* HEADER */
+header{background:#fff;position:sticky;top:0;z-index:1000;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:25px;font-weight:800;color:#174b42}
+.logo span{display:block;font-size:11px;letter-spacing:2px;color:#c68a32;font-weight:600;margin-top:-5px}
+.navlinks{display:flex;align-items:center;gap:27px;font-size:15px;font-weight:600}
+.navlinks a:hover{color:#c68a32}
+.navbtn{background:#c68a32;color:#fff!important;padding:12px 19px;border-radius:5px}
+.menu{display:none;border:0;background:none;font-size:28px;cursor:pointer}
+
+/* HERO */
+.hero{min-height:510px;display:flex;align-items:center;color:#fff;position:relative;
+background:linear-gradient(90deg,rgba(0,0,0,.72),rgba(0,0,0,.32)),url("https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1800&q=85") center/cover}
+.hero-content{max-width:760px;padding:75px 0}
+.crumb{font-size:14px;margin-bottom:18px;color:#eee}
+.crumb a{color:#fff}
+.hero h1{font-size:52px;line-height:1.12;margin-bottom:17px}
+.hero p{font-size:19px;max-width:700px;color:#f4f4f4}
+.hero-buttons{display:flex;gap:13px;margin-top:28px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 23px;border-radius:5px;font-weight:700;border:2px solid transparent;cursor:pointer}
+.btn-primary{background:#c68a32;color:#fff}
+.btn-primary:hover{background:#a96f1e}
+.btn-light{border-color:#fff;color:#fff}
+.btn-light:hover{background:#fff;color:#222}
+
+/* QUICK INFO */
+.quick{margin-top:-45px;position:relative;z-index:5}
+.quick-grid{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;box-shadow:0 8px 30px rgba(0,0,0,.13);border-radius:7px;overflow:hidden}
+.quick-item{padding:22px 20px;border-right:1px solid #eee}
+.quick-item:last-child{border:0}
+.quick-item small{display:block;color:#777;text-transform:uppercase;font-size:11px;font-weight:700;letter-spacing:1px}
+.quick-item strong{display:block;margin-top:4px;font-size:16px;color:#174b42}
+
+/* SECTIONS */
+section{padding:78px 0}
+.section-head{text-align:center;margin-bottom:42px}
+.section-head .eyebrow{color:#c68a32;text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:800}
+.section-head h2{font-size:36px;color:#174b42;margin:8px 0 12px}
+.section-head p{max-width:720px;margin:auto;color:#666}
+.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center}
+.about-image img{width:100%;height:470px;object-fit:cover;border-radius:8px}
+.about-text h2{font-size:36px;color:#174b42;line-height:1.2;margin-bottom:18px}
+.about-text p{color:#666;margin-bottom:16px}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+.check{font-weight:600;color:#333}
+.check:before{content:"✓";color:#c68a32;font-weight:900;margin-right:9px}
+
+/* HIGHLIGHTS */
+.alt{background:#f7f5f0}
+.highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border-radius:8px;padding:28px;box-shadow:0 5px 20px rgba(0,0,0,.07)}
+.card .icon{width:45px;height:45px;border-radius:50%;background:#f4eadb;color:#c68a32;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:bold;margin-bottom:15px}
+.card h3{color:#174b42;font-size:20px;margin-bottom:8px}
+.card p{color:#666;font-size:15px}
+
+/* ITINERARY */
+.itinerary{max-width:900px;margin:auto}
+.day{display:grid;grid-template-columns:105px 1fr;gap:25px;margin-bottom:20px}
+.day-label{background:#174b42;color:#fff;border-radius:7px;height:max-content;padding:13px;text-align:center;font-weight:800}
+.day-content{border:1px solid #e8e8e8;border-radius:7px;padding:23px;background:#fff}
+.day-content h3{color:#174b42;margin-bottom:8px;font-size:21px}
+.day-content p{color:#666}
+.day-content ul{padding-left:20px;color:#555;margin-top:9px}
+.day-content li{margin:3px 0}
+
+/* INCLUDED */
+.include-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.include-box{background:#fff;border:1px solid #e8e8e8;border-radius:8px;padding:30px}
+.include-box h3{color:#174b42;font-size:23px;margin-bottom:17px}
+.include-box ul{list-style:none}
+.include-box li{padding:8px 0;border-bottom:1px solid #eee;color:#555}
+.include-box li:last-child{border:0}
+.include-box li:before{margin-right:10px;font-weight:bold}
+.included li:before{content:"✓";color:#198754}
+.excluded li:before{content:"×";color:#c0392b}
+
+/* CTA */
+.cta{padding:65px 0;background:linear-gradient(90deg,#174b42,#24675a);color:#fff}
+.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}
+.cta h2{font-size:34px;margin-bottom:8px}
+.cta p{color:#e3eeee}
+.cta .btn{white-space:nowrap}
+
+/* ENQUIRY */
+.form-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:start}
+.contact-box{background:#174b42;color:#fff;padding:35px;border-radius:8px}
+.contact-box h3{font-size:27px;margin-bottom:13px}
+.contact-box p{color:#dce9e6;margin-bottom:20px}
+.contact-line{padding:14px 0;border-top:1px solid rgba(255,255,255,.18)}
+.contact-line strong{display:block;color:#fff}
+.contact-line a{color:#fff}
+form{background:#fff;border:1px solid #e7e7e7;padding:32px;border-radius:8px;box-shadow:0 5px 22px rgba(0,0,0,.05)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.field{display:flex;flex-direction:column}
+.field.full{grid-column:1/-1}
+label{font-size:13px;font-weight:700;margin-bottom:6px;color:#444}
+input,select,textarea{width:100%;border:1px solid #d7d7d7;border-radius:5px;padding:12px 13px;font:inherit;outline:none}
+input:focus,select:focus,textarea:focus{border-color:#c68a32}
+textarea{min-height:120px;resize:vertical}
+.submit{margin-top:20px;border:0;background:#c68a32;color:#fff;padding:14px 25px;border-radius:5px;font-weight:800;font-size:15px;cursor:pointer}
+.submit:hover{background:#a96f1e}
+
+/* FOOTER */
+footer{background:#111;color:#ddd;padding:50px 0 20px}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:45px}
+footer h3{color:#fff;margin-bottom:15px}
+footer p,footer li{color:#aaa;font-size:14px}
+footer ul{list-style:none}
+footer li{margin:8px 0}
+footer a:hover{color:#fff}
+.copyright{border-top:1px solid #292929;margin-top:35px;padding-top:18px;text-align:center;color:#777;font-size:13px}
+
+/* FLOATING */
+.whatsapp{position:fixed;right:20px;bottom:20px;width:57px;height:57px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:bold;z-index:1100;box-shadow:0 5px 18px rgba(0,0,0,.25)}
+.top{position:fixed;right:20px;bottom:88px;width:42px;height:42px;border:0;border-radius:5px;background:#174b42;color:#fff;cursor:pointer;display:none;z-index:1099}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+.navlinks{display:none;position:absolute;top:76px;left:0;width:100%;background:#fff;padding:18px 5%;box-shadow:0 8px 15px rgba(0,0,0,.1);flex-direction:column;align-items:flex-start;gap:17px}
+.navlinks.open{display:flex}
+.menu{display:block}
+.hero h1{font-size:42px}
+.quick-grid{grid-template-columns:1fr 1fr}
+.about-grid,.form-wrap{grid-template-columns:1fr}
+.highlights{grid-template-columns:1fr 1fr}
+.footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+.topbar{display:none}
+.nav{height:68px}
+.navlinks{top:68px}
+.logo{font-size:21px}
+.hero{min-height:520px}
+.hero-content{padding:55px 0}
+.hero h1{font-size:35px}
+.hero p{font-size:16px}
+.quick{margin-top:-25px}
+.quick-grid{grid-template-columns:1fr 1fr}
+.quick-item{padding:16px 13px}
+.quick-item strong{font-size:14px}
+section{padding:58px 0}
+.section-head h2,.about-text h2{font-size:29px}
+.highlights{grid-template-columns:1fr}
+.checks{grid-template-columns:1fr}
+.day{grid-template-columns:1fr;gap:10px}
+.day-label{width:105px}
+.include-grid{grid-template-columns:1fr}
+.cta-inner{flex-direction:column;align-items:flex-start}
+.cta h2{font-size:28px}
+.form-grid{grid-template-columns:1fr}
+.field.full{grid-column:auto}
+.footer-grid{grid-template-columns:1fr}
+.hero-buttons .btn{width:100%;text-align:center}
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div class="top-left">
+      <span>Krishna Travelers India</span>
+      <span>Delhi • Rajasthan • North India</span>
+    </div>
+    <div class="top-right">
+      <a href="tel:+918587994018">📞 +91 85879 94018</a>
+      <a href="https://wa.me/918587994018" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="container nav">
+    <a href="index.html" class="logo">
+      Krishna Travelers
+      <span>INDIA TOUR & TRAVEL</span>
+    </a>
+
+    <button class="menu" id="menuBtn" aria-label="Open menu">☰</button>
+
+    <nav class="navlinks" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#tours">Tours</a>
+      <a href="index.html#destinations">Destinations</a>
+      <a href="index.html#vehicles">Vehicles</a>
+      <a href="#enquiry" class="navbtn">Plan My Trip</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="crumb"><a href="index.html">Home</a> / India Tour Packages / Udaipur Tour</div>
+      <h1>Udaipur Tour Package</h1>
+      <p>Discover the romantic City of Lakes with its magnificent palaces, historic forts, peaceful lakes and beautiful Rajasthani culture.</p>
+      <div class="hero-buttons">
+        <a href="#enquiry" class="btn btn-primary">Plan This Tour →</a>
+        <a href="tel:+918587994018" class="btn btn-light">Call +91 85879 94018</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="quick">
+  <div class="container">
+    <div class="quick-grid">
+      <div class="quick-item">
+        <small>Duration</small>
+        <strong>03 Nights / 04 Days</strong>
+      </div>
+      <div class="quick-item">
+        <small>Destination</small>
+        <strong>Udaipur, Rajasthan</strong>
+      </div>
+      <div class="quick-item">
+        <small>Tour Type</small>
+        <strong>Private & Customizable</strong>
+      </div>
+      <div class="quick-item">
+        <small>Vehicle</small>
+        <strong>Comfortable Private Car</strong>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="container about-grid">
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1100&q=85" alt="Udaipur City Palace and Lake">
+    </div>
+    <div class="about-text">
+      <div class="section-head" style="text-align:left;margin-bottom:15px">
+        <div class="eyebrow">Explore Rajasthan</div>
+        <h2>Experience the charm of Udaipur</h2>
+      </div>
+      <p>Udaipur is one of Rajasthan's most enchanting destinations, known for its lakes, grand palaces, colourful markets and romantic sunsets.</p>
+      <p>This carefully planned private tour gives you time to explore the city's famous landmarks while travelling comfortably at your own pace.</p>
+      <div class="checks">
+        <div class="check">Private sightseeing</div>
+        <div class="check">Experienced driver</div>
+        <div class="check">Flexible itinerary</div>
+        <div class="check">Comfortable vehicle</div>
+        <div class="check">Local sightseeing</div>
+        <div class="check">Custom tour options</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Tour Highlights</div>
+      <h2>What you can experience</h2>
+      <p>Enjoy a balanced combination of heritage, lakes, architecture, shopping and local culture.</p>
+    </div>
+
+    <div class="highlights">
+      <div class="card">
+        <div class="icon">✦</div>
+        <h3>City Palace</h3>
+        <p>Explore the magnificent City Palace complex overlooking Lake Pichola and discover royal architecture, courtyards and historic collections.</p>
+      </div>
+      <div class="card">
+        <div class="icon">◉</div>
+        <h3>Lake Pichola</h3>
+        <p>Enjoy the peaceful surroundings of Lake Pichola with beautiful views of palaces, ghats and the Aravalli landscape.</p>
+      </div>
+      <div class="card">
+        <div class="icon">⌂</div>
+        <h3>Jagdish Temple</h3>
+        <p>Visit the famous historic temple known for its detailed stone carvings and traditional Indo-Aryan architecture.</p>
+      </div>
+      <div class="card">
+        <div class="icon">◆</div>
+        <h3>Saheliyon Ki Bari</h3>
+        <p>Walk through the elegant gardens, fountains and marble features built as a relaxing retreat for the royal ladies.</p>
+      </div>
+      <div class="card">
+        <div class="icon">★</div>
+        <h3>Monsoon Palace</h3>
+        <p>Take in panoramic views of Udaipur and the surrounding hills from the historic Sajjangarh or Monsoon Palace.</p>
+      </div>
+      <div class="card">
+        <div class="icon">₹</div>
+        <h3>Local Markets</h3>
+        <p>Shop for handicrafts, textiles, jewellery, souvenirs and traditional Rajasthani products in Udaipur's vibrant markets.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">04 Day Journey</div>
+      <h2>Udaipur Tour Itinerary</h2>
+      <p>The itinerary can be adjusted according to your arrival time, interests and travel requirements.</p>
+    </div>
+
+    <div class="itinerary">
+      <div class="day">
+        <div class="day-label">DAY 01</div>
+        <div class="day-content">
+          <h3>Arrival in Udaipur & Lake Pichola</h3>
+          <p>Arrive in Udaipur and meet your driver. Transfer to your hotel and relax before beginning an easy evening exploration.</p>
+          <ul>
+            <li>Hotel check-in and leisure time</li>
+            <li>Visit Lake Pichola area</li>
+            <li>Explore Gangaur Ghat / nearby old city</li>
+            <li>Enjoy the evening atmosphere of Udaipur</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="day-label">DAY 02</div>
+        <div class="day-content">
+          <h3>Udaipur Heritage Sightseeing</h3>
+          <p>Spend the day exploring Udaipur's most famous heritage attractions and architectural landmarks.</p>
+          <ul>
+            <li>City Palace</li>
+            <li>Jagdish Temple</li>
+            <li>Saheliyon Ki Bari</li>
+            <li>Fateh Sagar Lake</li>
+            <li>Local market visit</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="day-label">DAY 03</div>
+        <div class="day-content">
+          <h3>Monsoon Palace & Leisure</h3>
+          <p>Enjoy a relaxed day with panoramic views and optional experiences depending on your interests.</p>
+          <ul>
+            <li>Visit Sajjangarh / Monsoon Palace</li>
+            <li>Explore scenic viewpoints</li>
+            <li>Optional shopping</li>
+            <li>Free evening for leisure or local dining</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="day-label">DAY 04</div>
+        <div class="day-content">
+          <h3>Departure from Udaipur</h3>
+          <p>After breakfast, check out from the hotel and proceed for your onward journey or airport/railway station transfer.</p>
+          <ul>
+            <li>Breakfast and checkout</li>
+            <li>Optional short sightseeing based on departure time</li>
+            <li>Drop at airport, railway station or your next destination</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Know Before You Book</div>
+      <h2>Inclusions & Exclusions</h2>
+    </div>
+
+    <div class="include-grid">
+      <div class="include-box included">
+        <h3>Package Includes</h3>
+        <ul>
+          <li>Private vehicle for sightseeing and transfers</li>
+          <li>Driver allowance, fuel and applicable vehicle charges</li>
+          <li>Pickup and drop as discussed in your itinerary</li>
+          <li>Udaipur local sightseeing</li>
+          <li>Customizable travel schedule</li>
+          <li>Assistance during the tour</li>
+        </ul>
+      </div>
+
+      <div class="include-box excluded">
+        <h3>Package Excludes</h3>
+        <ul>
+          <li>Hotel accommodation unless specifically included in quotation</li>
+          <li>Monument entrance tickets</li>
+          <li>Boat ride charges</li>
+          <li>Meals and personal expenses</li>
+          <li>Guide charges unless requested</li>
+          <li>Anything not specifically mentioned in the final quotation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container cta-inner">
+    <div>
+      <h2>Planning your Udaipur trip?</h2>
+      <p>Tell us your dates, group size and requirements. We'll prepare a customized travel plan for you.</p>
+    </div>
+    <a href="#enquiry" class="btn btn-primary">Get a Tour Quote →</a>
+  </div>
+</section>
+
+<section id="enquiry">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Start Your Journey</div>
+      <h2>Send an Enquiry</h2>
+      <p>Share your travel details and Krishna Travelers will contact you to discuss the trip.</p>
+    </div>
+
+    <div class="form-wrap">
+      <div class="contact-box">
+        <h3>Let's plan your Udaipur trip</h3>
+        <p>Whether you need a short city tour or a customized Rajasthan holiday, we can help plan the vehicle and sightseeing according to your requirements.</p>
+
+        <div class="contact-line">
+          <strong>Call / WhatsApp</strong>
+          <a href="tel:+918587994018">+91 85879 94018</a>
+        </div>
+
+        <div class="contact-line">
+          <strong>WhatsApp Enquiry</strong>
+          <a href="https://wa.me/918587994018?text=Hello%20Krishna%20Travelers,%20I%20am%20interested%20in%20the%20Udaipur%20Tour%20Package." target="_blank">Chat on WhatsApp</a>
+        </div>
+
+        <div class="contact-line">
+          <strong>Email</strong>
+          <a href="mailto:info@krishnatravelers.in">info@krishnatravelers.in</a>
+        </div>
+
+        <div class="contact-line">
+          <strong>Office</strong>
+          <span>C-4/53, Yamuna Vihar, Delhi - 110053</span>
+        </div>
+      </div>
+
+      <form id="tourForm">
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">Your Name *</label>
+            <input id="name" required placeholder="Enter your name">
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone Number *</label>
+            <input id="phone" required type="tel" placeholder="Enter phone number">
+          </div>
+
+          <div class="field">
+            <label for="startDate">Travel Date</label>
+            <input id="startDate" type="date">
+          </div>
+
+          <div class="field">
+            <label for="people">Travellers</label>
+            <select id="people">
+              <option>1-2 People</option>
+              <option>3-4 People</option>
+              <option>5-8 People</option>
+              <option>9-15 People</option>
+              <option>16+ People</option>
+            </select>
+          </div>
+
+          <div class="field full">
+            <label for="message">Your Requirement</label>
+            <textarea id="message" placeholder="Tell us about your dates, hotel requirement, pickup location, number of travellers, or any special requirement."></textarea>
+          </div>
+        </div>
+
+        <button class="submit" type="submit">Send Enquiry on WhatsApp →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Krishna Travelers India</h3>
+        <p>Private and customized tours across Delhi, Rajasthan, Agra, Jaipur, Udaipur, Himachal and other destinations in India.</p>
+        <p style="margin-top:12px">Comfortable vehicles • Custom tours • Reliable travel assistance</p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#tours">Tour Packages</a></li>
+          <li><a href="index.html#destinations">Destinations</a></li>
+          <li><a href="#enquiry">Enquiry</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="tel:+918587994018">+91 85879 94018</a></li>
+          <li><a href="mailto:info@krishnatravelers.in">info@krishnatravelers.in</a></li>
+          <li>C-4/53, Yamuna Vihar, Delhi - 110053</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      © <span id="year"></span> Krishna Travelers India. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/918587994018?text=Hello%20Krishna%20Travelers,%20I%20am%20interested%20in%20the%20Udaipur%20Tour%20Package." target="_blank" aria-label="WhatsApp">☏</a>
+<button class="top" id="topBtn" aria-label="Back to top">↑</button>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", function(){
+  navLinks.classList.toggle("open");
+});
+
+document.querySelectorAll(".navlinks a").forEach(function(link){
+  link.addEventListener("click", function(){
+    navLinks.classList.remove("open");
+  });
+});
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", function(){
+  topBtn.style.display = window.scrollY > 450 ? "block" : "none";
+});
+
+topBtn.addEventListener("click", function(){
+  window.scrollTo({top:0, behavior:"smooth"});
+});
+
+document.getElementById("tourForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const date = document.getElementById("startDate").value;
+  const people = document.getElementById("people").value;
+  const message = document.getElementById("message").value.trim();
+
+  const text =
+    "Hello Krishna Travelers,%0A%0A" +
+    "I am interested in the Udaipur Tour Package.%0A%0A" +
+    "Name: " + encodeURIComponent(name) + "%0A" +
+    "Phone: " + encodeURIComponent(phone) + "%0A" +
+    "Travel Date: " + encodeURIComponent(date || "Not decided") + "%0A" +
+    "Travellers: " + encodeURIComponent(people) + "%0A" +
+    "Requirement: " + encodeURIComponent(message || "Please contact me with details.") + "%0A%0A" +
+    "Please share the tour quotation.";
+
+  window.open("https://wa.me/918587994018?text=" + text, "_blank");
+});
+</script>
+
+</body>
+</html>
