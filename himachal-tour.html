@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -906,3 +907,913 @@ function filterPackages(category, button){
 </body>
 </html>
 ```
+=======
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shimla, Himachal & Jammu Kashmir Tour Packages | Krishna International Travellers</title>
+
+<meta name="description" content="Explore Shimla, Himachal Pradesh and Jammu Kashmir tour packages with Krishna International Travellers. Choose from family, honeymoon, premium and customized holiday packages.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f7f8fa;
+    color:#222;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+}
+
+/* HERO */
+.hero{
+    min-height:480px;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=1800&q=85")
+    center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:60px 20px;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:48px;
+    line-height:1.15;
+    margin-bottom:18px;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:750px;
+    margin:auto;
+    color:#f2f2f2;
+}
+
+.hero-buttons{
+    margin-top:30px;
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#f39c12;
+    color:white;
+}
+
+.btn-primary:hover{
+    background:#d98200;
+    transform:translateY(-2px);
+}
+
+.btn-light{
+    background:white;
+    color:#222;
+}
+
+.btn-light:hover{
+    background:#eee;
+}
+
+/* INTRO */
+.intro{
+    max-width:1100px;
+    margin:55px auto 35px;
+    padding:0 20px;
+    text-align:center;
+}
+
+.intro h2{
+    font-size:34px;
+    margin-bottom:12px;
+    color:#1f3c4d;
+}
+
+.intro p{
+    color:#666;
+    font-size:17px;
+}
+
+/* FILTER */
+.filters{
+    max-width:1200px;
+    margin:25px auto 35px;
+    padding:0 20px;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.filter-btn{
+    border:1px solid #ddd;
+    background:white;
+    padding:10px 20px;
+    border-radius:25px;
+    cursor:pointer;
+    font-weight:bold;
+    color:#444;
+}
+
+.filter-btn.active,
+.filter-btn:hover{
+    background:#1f3c4d;
+    color:white;
+}
+
+/* PACKAGE GRID */
+.packages{
+    max-width:1200px;
+    margin:auto;
+    padding:0 20px 70px;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.package-card{
+    background:white;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 5px 22px rgba(0,0,0,.09);
+    transition:.3s;
+}
+
+.package-card:hover{
+    transform:translateY(-7px);
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+}
+
+.package-image{
+    height:220px;
+    position:relative;
+    overflow:hidden;
+}
+
+.package-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.package-card:hover .package-image img{
+    transform:scale(1.06);
+}
+
+.badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#f39c12;
+    color:white;
+    padding:7px 13px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.package-content{
+    padding:22px;
+}
+
+.package-content h3{
+    font-size:22px;
+    color:#1f3c4d;
+    margin-bottom:10px;
+}
+
+.duration{
+    color:#e67e22;
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+.route{
+    color:#666;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.highlights{
+    display:flex;
+    flex-wrap:wrap;
+    gap:7px;
+    margin-bottom:20px;
+}
+
+.highlights span{
+    background:#f2f5f6;
+    color:#555;
+    padding:5px 9px;
+    border-radius:5px;
+    font-size:12px;
+}
+
+.card-bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+}
+
+.price{
+    color:#1f3c4d;
+    font-size:17px;
+    font-weight:bold;
+}
+
+.view-btn{
+    background:#1f3c4d;
+    color:white;
+    padding:11px 17px;
+    border-radius:7px;
+    font-size:14px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.view-btn:hover{
+    background:#f39c12;
+}
+
+/* CTA */
+.cta{
+    background:
+    linear-gradient(rgba(20,45,58,.92),rgba(20,45,58,.92)),
+    url("https://images.unsplash.com/photo-1533130061792-64b345e4a833?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.cta h2{
+    font-size:35px;
+    margin-bottom:12px;
+}
+
+.cta p{
+    max-width:700px;
+    margin:0 auto 25px;
+    color:#ddd;
+}
+
+/* FOOTER */
+footer{
+    background:#111c22;
+    color:#bbb;
+    text-align:center;
+    padding:25px 15px;
+    font-size:14px;
+}
+
+footer strong{
+    color:white;
+}
+
+/* RESPONSIVE */
+@media(max-width:950px){
+    .packages{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+}
+
+@media(max-width:650px){
+    .packages{
+        grid-template-columns:1fr;
+    }
+
+    .hero{
+        min-height:430px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .intro h2{
+        font-size:28px;
+    }
+
+    .package-image{
+        height:210px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Shimla, Himachal & Jammu Kashmir Tours</h1>
+
+        <p>
+            Discover the mountains, valleys, lakes and beautiful landscapes
+            of North India with our carefully planned holiday packages.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#packages" class="btn btn-primary">
+                Explore Packages
+            </a>
+
+            <a href="#contact" class="btn btn-light">
+                Plan My Trip
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- INTRO -->
+<section class="intro">
+
+    <h2>Explore Our North India Tour Packages</h2>
+
+    <p>
+        Choose from comfortable family holidays, romantic honeymoon trips,
+        premium mountain tours and Jammu Kashmir experiences.
+        Every package can also be customized according to your travel dates
+        and requirements.
+    </p>
+
+</section>
+
+
+<!-- FILTER -->
+<div class="filters">
+
+    <button class="filter-btn active" onclick="filterPackages('all',this)">
+        All Packages
+    </button>
+
+    <button class="filter-btn" onclick="filterPackages('shimla',this)">
+        Shimla & Himachal
+    </button>
+
+    <button class="filter-btn" onclick="filterPackages('kashmir',this)">
+        Jammu & Kashmir
+    </button>
+
+    <button class="filter-btn" onclick="filterPackages('premium',this)">
+        Premium
+    </button>
+
+</div>
+
+
+<!-- PACKAGES -->
+<section class="packages" id="packages">
+
+
+    <!-- 1 -->
+    <div class="package-card shimla">
+
+        <div class="package-image">
+
+            <span class="badge">Popular</span>
+
+            <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=900&q=80"
+                 alt="Shimla Manali Tour">
+
+        </div>
+
+        <div class="package-content">
+
+            <h3>Shimla Manali Tour</h3>
+
+            <div class="duration">
+                7 Nights / 8 Days
+            </div>
+
+            <div class="route">
+                Delhi → Shimla → Manali → Delhi
+            </div>
+
+            <div class="highlights">
+                <span>Shimla</span>
+                <span>Manali</span>
+                <span>Snow Points</span>
+                <span>Mountain Views</span>
+            </div>
+
+            <div class="card-bottom">
+
+                <div class="price">
+                    Custom Quote
+                </div>
+
+                <!-- CHANGE THIS URL -->
+                <a href="shimla-manali-tour.html" class="view-btn">
+                    View Package
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- 2 -->
+    <div class="package-card shimla">
+
+        <div class="package-image">
+
+            <span class="badge">Family</span>
+
+            <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=900&q=80"
+                 alt="Himachal Pradesh Tour">
+
+        </div>
+
+        <div class="package-content">
+
+            <h3>Himachal Extended Tour</h3>
+
+            <div class="duration">
+                9 Nights / 10 Days
+            </div>
+
+            <div class="route">
+                Delhi → Shimla → Manali → Dharamshala
+            </div>
+
+            <div class="highlights">
+                <span>Shimla</span>
+                <span>Manali</span>
+                <span>Dharamshala</span>
+                <span>Family Trip</span>
+            </div>
+
+            <div class="card-bottom">
+
+                <div class="price">
+                    Custom Quote
+                </div>
+
+                <a href="himachal-extended-tour.html" class="view-btn">
+                    View Package
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- 3 -->
+    <div class="package-card shimla premium">
+
+        <div class="package-image">
+
+            <span class="badge">Premium</span>
+
+            <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=80"
+                 alt="Premium Himachal Tour">
+
+        </div>
+
+        <div class="package-content">
+
+            <h3>Premium Himachal Escape</h3>
+
+            <div class="duration">
+                8 Nights / 9 Days
+            </div>
+
+            <div class="route">
+                Delhi → Shimla → Manali → Dharamshala → Delhi
+            </div>
+
+            <div class="highlights">
+                <span>Premium Hotels</span>
+                <span>Private Vehicle</span>
+                <span>Hill Stations</span>
+                <span>Sightseeing</span>
+            </div>
+
+            <div class="card-bottom">
+
+                <div class="price">
+                    Custom Quote
+                </div>
+
+                <a href="premium-himachal-tour.html" class="view-btn">
+                    View Package
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- 4 -->
+    <div class="package-card kashmir">
+
+        <div class="package-image">
+
+            <span class="badge">Kashmir</span>
+
+            <img src=""
+                 alt="Kashmir Tour">
+
+        </div>
+
+        <div class="package-content">
+
+            <h3>Kashmir Valley Tour</h3>
+
+            <div class="duration">
+                5 Nights / 6 Days
+            </div>
+
+            <div class="route">
+                Srinagar → Gulmarg → Pahalgam → Srinagar
+            </div>
+
+            <div class="highlights">
+                <span>Srinagar</span>
+                <span>Gulmarg</span>
+                <span>Pahalgam</span>
+                <span>Dal Lake</span>
+            </div>
+
+            <div class="card-bottom">
+
+                <div class="price">
+                    Custom Quote
+                </div>
+
+                <a href="kashmir-valley-tour.html" class="view-btn">
+                    View Package
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- 5 -->
+    <div class="package-card kashmir">
+
+        <div class="package-image">
+
+            <span class="badge">Popular</span>
+
+            <img src="https://images.unsplash.com/photo-1598091383021-15ddea10925d?auto=format&fit=crop&w=900&q=80"
+                 alt="Kashmir Great Lakes">
+
+        </div>
+
+        <div class="package-content">
+
+            <h3>Complete Kashmir Holiday</h3>
+
+            <div class="duration">
+                6 Nights / 7 Days
+            </div>
+
+            <div class="route">
+                Srinagar → Gulmarg → Pahalgam → Sonamarg
+            </div>
+
+            <div class="highlights">
+                <span>Gulmarg</span>
+                <span>Pahalgam</span>
+                <span>Sonamarg</span>
+                <span>Srinagar</span>
+            </div>
+
+            <div class="card-bottom">
+
+                <div class="price">
+                    Custom Quote
+                </div>
+
+                <a href="complete-kashmir-tour.html" class="view-btn">
+                    View Package
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- 6 -->
+    <div class="package-card kashmir premium">
+
+        <div class="package-image">
+
+            <span class="badge">Premium</span>
+
+            <img src="https://images.unsplash.com/photo-1566837497312-7be4b1c70fb2?auto=format&fit=crop&w=900&q=80"
+                 alt="Premium Kashmir Tour">
+
+        </div>
+
+        <div class="package-content">
+
+            <h3>Premium Kashmir Experience</h3>
+
+            <div class="duration">
+                7 Nights / 8 Days
+            </div>
+
+            <div class="route">
+                Srinagar → Gulmarg → Pahalgam → Sonamarg
+            </div>
+
+            <div class="highlights">
+                <span>Luxury Stay</span>
+                <span>Private Cab</span>
+                <span>Houseboat</span>
+                <span>Premium Tour</span>
+            </div>
+
+            <div class="card-bottom">
+
+                <div class="price">
+                    Custom Quote
+                </div>
+
+                <a href="premium-kashmir-tour.html" class="view-btn">
+                    View Package
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- 7 -->
+    <div class="package-card kashmir">
+
+        <div class="package-image">
+
+            <span class="badge">Jammu</span>
+
+            <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=900&q=80"
+                 alt="Jammu Kashmir Tour">
+
+        </div>
+
+        <div class="package-content">
+
+            <h3>Jammu Kashmir Tour</h3>
+
+            <div class="duration">
+                7 Nights / 8 Days
+            </div>
+
+            <div class="route">
+                Jammu → Katra → Srinagar → Gulmarg → Pahalgam
+            </div>
+
+            <div class="highlights">
+                <span>Vaishno Devi</span>
+                <span>Srinagar</span>
+                <span>Gulmarg</span>
+                <span>Pahalgam</span>
+            </div>
+
+            <div class="card-bottom">
+
+                <div class="price">
+                    Custom Quote
+                </div>
+
+                <a href="jammu-kashmir-tour.html" class="view-btn">
+                    View Package
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- 8 -->
+    <div class="package-card kashmir">
+
+        <div class="package-image">
+
+            <span class="badge">Family</span>
+
+            <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=900&q=80"
+                 alt="Kashmir Family Tour">
+
+        </div>
+
+        <div class="package-content">
+
+            <h3>Kashmir Family Holiday</h3>
+
+            <div class="duration">
+                5 Nights / 6 Days
+            </div>
+
+            <div class="route">
+                Srinagar → Gulmarg → Pahalgam → Srinagar
+            </div>
+
+            <div class="highlights">
+                <span>Family</span>
+                <span>Dal Lake</span>
+                <span>Gondola</span>
+                <span>Valley Tours</span>
+            </div>
+
+            <div class="card-bottom">
+
+                <div class="price">
+                    Custom Quote
+                </div>
+
+                <a href="kashmir-family-tour.html" class="view-btn">
+                    View Package
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- 9 -->
+    <div class="package-card shimla">
+
+        <div class="package-image">
+
+            <span class="badge">Honeymoon</span>
+
+            <img src="https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&w=900&q=80"
+                 alt="Himachal Honeymoon">
+
+        </div>
+
+        <div class="package-content">
+
+            <h3>Himachal Honeymoon Tour</h3>
+
+            <div class="duration">
+                6 Nights / 7 Days
+            </div>
+
+            <div class="route">
+                Delhi → Shimla → Manali → Delhi
+            </div>
+
+            <div class="highlights">
+                <span>Couple</span>
+                <span>Shimla</span>
+                <span>Manali</span>
+                <span>Romantic Stay</span>
+            </div>
+
+            <div class="card-bottom">
+
+                <div class="price">
+                    Custom Quote
+                </div>
+
+                <a href="himachal-honeymoon-tour.html" class="view-btn">
+                    View Package
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+<section class="cta" id="contact">
+
+    <h2>Can't Find Your Perfect Package?</h2>
+
+    <p>
+        Tell us your travel dates, number of travellers and preferred
+        destinations. We can create a customized Himachal or Jammu Kashmir
+        holiday package for you.
+    </p>
+
+    <a href="contact.html" class="btn btn-primary">
+        Plan My Custom Trip
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <p>
+        © 2026 <strong>Krishna International Travellers</strong>.
+        All Rights Reserved.
+    </p>
+
+    <p>
+        Shimla • Himachal Pradesh • Jammu & Kashmir
+    </p>
+
+</footer>
+
+
+<script>
+
+function filterPackages(category, button){
+
+    const cards = document.querySelectorAll(".package-card");
+    const buttons = document.querySelectorAll(".filter-btn");
+
+    buttons.forEach(btn => {
+        btn.classList.remove("active");
+    });
+
+    button.classList.add("active");
+
+    cards.forEach(card => {
+
+        if(category === "all"){
+            card.style.display = "block";
+        }
+
+        else if(card.classList.contains(category)){
+            card.style.display = "block";
+        }
+
+        else{
+            card.style.display = "none";
+        }
+
+    });
+
+}
+
+</script>
+
+</body>
+</html>
+```
+>>>>>>> 3b93194 (my first commit)

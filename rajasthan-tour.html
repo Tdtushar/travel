@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1655,4 +1656,1663 @@ function filterTours(category,button){
 </script>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rajasthan Tour Packages | Krishna Travelers India</title>
+
+<meta name="description" content="Explore Rajasthan tour packages with Krishna Travelers India. Jaipur, Jodhpur, Jaisalmer, Udaipur, Pushkar, Bikaner and customized Rajasthan tours.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f7f8f6;
+    color:#222;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    height:76px;
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 6%;
+    position:sticky;
+    top:0;
+    z-index:999;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+}
+
+.logo{
+    font-size:24px;
+    font-weight:700;
+    color:#173b35;
+}
+
+.logo span{
+    color:#b47729;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:27px;
+}
+
+.nav-links a{
+    color:#333;
+    font-size:15px;
+    font-weight:600;
+}
+
+.nav-links a:hover{
+    color:#b47729;
+}
+
+.nav-btn{
+    background:#173b35;
+    color:#fff !important;
+    padding:11px 20px;
+    border-radius:6px;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:500px;
+    background:
+    linear-gradient(rgba(15,50,44,.70),rgba(15,50,44,.80)),
+    url("https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1800&q=85");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+    padding:70px 20px;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero-label{
+    color:#e0bd80;
+    font-size:13px;
+    font-weight:bold;
+    letter-spacing:3px;
+    margin-bottom:14px;
+}
+
+.hero h1{
+    font-size:54px;
+    line-height:1.15;
+    margin-bottom:18px;
+}
+
+.hero p{
+    max-width:760px;
+    margin:auto;
+    font-size:18px;
+    color:#eee;
+}
+
+.hero-buttons{
+    margin-top:30px;
+}
+
+.hero-btn{
+    display:inline-block;
+    background:#b47729;
+    color:#fff;
+    padding:14px 28px;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+.hero-btn:hover{
+    background:#99621f;
+}
+
+/* ================= INTRO ================= */
+
+.intro{
+    width:88%;
+    max-width:1100px;
+    margin:auto;
+    text-align:center;
+    padding:65px 0 35px;
+}
+
+.intro-label{
+    color:#b47729;
+    font-size:13px;
+    letter-spacing:2px;
+    font-weight:bold;
+}
+
+.intro h2{
+    color:#173b35;
+    font-size:36px;
+    margin:7px 0 15px;
+}
+
+.intro p{
+    max-width:780px;
+    margin:auto;
+    color:#666;
+}
+
+/* ================= FILTER ================= */
+
+.filter-area{
+    width:88%;
+    max-width:1200px;
+    margin:0 auto 30px;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.filter-btn{
+    border:1px solid #d7d7d7;
+    background:#fff;
+    color:#555;
+    padding:9px 17px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:13px;
+    transition:.2s;
+}
+
+.filter-btn:hover,
+.filter-btn.active{
+    background:#173b35;
+    color:#fff;
+    border-color:#173b35;
+}
+
+/* ================= GRID ================= */
+
+.tours-section{
+    width:88%;
+    max-width:1200px;
+    margin:auto;
+    padding-bottom:80px;
+}
+
+/* EXACTLY 3 COLUMNS */
+
+.tour-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+}
+
+/* ================= CARD ================= */
+
+.tour-card{
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+    display:flex;
+    flex-direction:column;
+}
+
+.tour-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 30px rgba(0,0,0,.14);
+}
+
+.tour-image{
+    height:215px;
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+
+.duration{
+    position:absolute;
+    top:14px;
+    left:14px;
+    background:#173b35;
+    color:#fff;
+    padding:7px 11px;
+    border-radius:5px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.tour-body{
+    padding:22px;
+    display:flex;
+    flex-direction:column;
+    flex:1;
+}
+
+.location{
+    color:#b47729;
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:.5px;
+    margin-bottom:6px;
+}
+
+.tour-body h3{
+    color:#173b35;
+    font-size:20px;
+    line-height:1.3;
+    margin-bottom:10px;
+}
+
+.tour-body p{
+    color:#666;
+    font-size:14px;
+    line-height:1.6;
+    margin-bottom:14px;
+}
+
+.route{
+    background:#f3f4f1;
+    border-radius:5px;
+    padding:9px 11px;
+    color:#555;
+    font-size:12px;
+    margin-bottom:15px;
+}
+
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+    margin-bottom:20px;
+}
+
+.tag{
+    background:#f1eee7;
+    color:#555;
+    padding:5px 8px;
+    border-radius:4px;
+    font-size:11px;
+}
+
+.view-btn{
+    display:block;
+    text-align:center;
+    background:#173b35;
+    color:#fff;
+    padding:11px;
+    border-radius:5px;
+    font-size:14px;
+    font-weight:bold;
+    margin-top:auto;
+    transition:.2s;
+}
+
+.view-btn:hover{
+    background:#b47729;
+}
+
+/* ================= WHY ================= */
+
+.why{
+    background:#173b35;
+    color:#fff;
+    padding:70px 6%;
+}
+
+.why-inner{
+    max-width:1150px;
+    margin:auto;
+}
+
+.why-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.why-title span{
+    color:#d9b16d;
+    font-size:13px;
+    letter-spacing:2px;
+}
+
+.why-title h2{
+    font-size:34px;
+    margin-top:6px;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.why-card{
+    border:1px solid rgba(255,255,255,.14);
+    border-radius:8px;
+    padding:25px 18px;
+    text-align:center;
+}
+
+.why-icon{
+    font-size:30px;
+    margin-bottom:8px;
+}
+
+.why-card h3{
+    color:#d9b16d;
+    margin-bottom:7px;
+    font-size:18px;
+}
+
+.why-card p{
+    color:#ddd;
+    font-size:13px;
+}
+
+/* ================= CTA ================= */
+
+.cta{
+    width:88%;
+    max-width:1100px;
+    margin:70px auto;
+    background:#fff;
+    border-radius:10px;
+    padding:50px 30px;
+    text-align:center;
+    box-shadow:0 5px 25px rgba(0,0,0,.07);
+}
+
+.cta h2{
+    color:#173b35;
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.cta p{
+    color:#666;
+    max-width:700px;
+    margin:auto;
+}
+
+.cta a{
+    display:inline-block;
+    margin-top:23px;
+    background:#b47729;
+    color:#fff;
+    padding:13px 26px;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#102c28;
+    color:#ddd;
+    padding:50px 6% 25px;
+}
+
+.footer-grid{
+    max-width:1150px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1.5fr 1fr 1fr;
+    gap:40px;
+}
+
+.footer-col h3{
+    color:#fff;
+    margin-bottom:15px;
+}
+
+.footer-col p,
+.footer-col a{
+    color:#ccc;
+    font-size:14px;
+    display:block;
+    margin-bottom:8px;
+}
+
+.footer-col a:hover{
+    color:#d9b16d;
+}
+
+.copyright{
+    max-width:1150px;
+    margin:30px auto 0;
+    padding-top:18px;
+    border-top:1px solid rgba(255,255,255,.1);
+    text-align:center;
+    color:#aaa;
+    font-size:13px;
+}
+
+/* ================= WHATSAPP ================= */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#25D366;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:26px;
+    z-index:9999;
+    box-shadow:0 5px 20px rgba(0,0,0,.25);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px){
+
+    .tour-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .why-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:700px){
+
+    .navbar{
+        padding:0 5%;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero{
+        min-height:440px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .tour-grid{
+        grid-template-columns:1fr;
+    }
+
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    .intro h2{
+        font-size:29px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <a href="index.html" class="logo">
+        ✈ Krishna <span>Travelers INDIA</span>
+    </a>
+
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="index.html#about">About</a>
+
+        <a href="rajasthan-tours.html">Rajasthan Tours</a>
+
+        <a href="index.html#vehicles">Vehicles</a>
+
+        <a href="index.html#contact">Contact</a>
+
+        <a href="index.html#contact" class="nav-btn">
+            Plan My Trip
+        </a>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-label">
+            KRISHNA TRAVELERS INDIA
+        </div>
+
+        <h1>
+            Explore Royal Rajasthan
+        </h1>
+
+        <p>
+            Discover magnificent forts, royal palaces, colourful cities,
+            golden deserts and unforgettable cultural experiences.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#packages" class="hero-btn">
+                Explore Tour Packages
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INTRO ================= -->
+
+<section class="intro">
+
+    <div class="intro-label">
+        RAJASTHAN TOUR PACKAGES
+    </div>
+
+    <h2>
+        Choose Your Rajasthan Journey
+    </h2>
+
+    <p>
+        Explore our Rajasthan tour packages covering Jaipur, Jodhpur,
+        Jaisalmer, Udaipur, Pushkar, Bikaner and other heritage destinations.
+        Every tour can also be customized according to your requirements.
+    </p>
+
+</section>
+
+
+<!-- ================= FILTER ================= -->
+
+<div class="filter-area">
+
+    <button class="filter-btn active" onclick="filterTours('all',this)">
+        All Tours
+    </button>
+
+    <button class="filter-btn" onclick="filterTours('short',this)">
+        Short Tours
+    </button>
+
+    <button class="filter-btn" onclick="filterTours('heritage',this)">
+        Heritage
+    </button>
+
+    <button class="filter-btn" onclick="filterTours('desert',this)">
+        Desert
+    </button>
+
+    <button class="filter-btn" onclick="filterTours('golden',this)">
+        Golden Triangle
+    </button>
+
+</div>
+
+
+<!-- ================= 21 PACKAGES ================= -->
+
+<section class="tours-section" id="packages">
+
+<div class="tour-grid">
+
+
+<!-- 01 -->
+<div class="tour-card" data-category="short desert">
+
+<div class="tour-image"
+style="background-image:url('https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1000&q=85');">
+
+<span class="duration">03 Nights / 04 Days</span>
+
+</div>
+
+<div class="tour-body">
+
+<div class="location">JODHPUR • JAISALMER</div>
+
+<h3>Jodhpur Jaisalmer Tour</h3>
+
+<p>
+Discover the Blue City and the golden desert heritage of western Rajasthan.
+</p>
+
+<div class="route">
+Jodhpur → Osian → Jaisalmer
+</div>
+
+<div class="tags">
+<span class="tag">🏰 Forts</span>
+<span class="tag">🐪 Desert</span>
+<span class="tag">Heritage</span>
+</div>
+
+<a href="jodhpur-jaisalmer-tour.html" class="view-btn">
+View Tour →
+</a>
+
+</div>
+</div>
+
+
+<!-- 02 -->
+<div class="tour-card" data-category="short heritage">
+
+<div class="tour-image"
+style="background-image:url('https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1000&q=85');">
+
+<span class="duration">03 Nights / 04 Days</span>
+
+</div>
+
+<div class="tour-body">
+
+<div class="location">JAIPUR • JODHPUR</div>
+
+<h3>Jaipur Jodhpur Tour</h3>
+
+<p>
+Experience royal Jaipur followed by the magnificent forts and palaces of Jodhpur.
+</p>
+
+<div class="route">
+Jaipur → Jodhpur
+</div>
+
+<div class="tags">
+<span class="tag">🏰 Forts</span>
+<span class="tag">Royal</span>
+<span class="tag">Culture</span>
+</div>
+
+<a href="jaipur-jodhpur-tour.html" class="view-btn">
+View Tour →
+</a>
+
+</div>
+</div>
+
+
+<!-- 03 -->
+<div class="tour-card" data-category="heritage">
+
+<div class="tour-image"
+style="background-image:url('https://images.unsplash.com/photo-1532664189809-02133fee698d?auto=format&fit=crop&w=1000&q=85');">
+
+<span class="duration">07 Nights / 08 Days</span>
+
+</div>
+
+<div class="tour-body">
+
+<div class="location">JAIPUR • JODHPUR • UDAIPUR</div>
+
+<h3>Jaipur Jodhpur Udaipur Tour</h3>
+
+<p>
+A classic Rajasthan journey connecting three iconic royal cities.
+</p>
+
+<div class="route">
+Jaipur → Jodhpur → Ranakpur → Udaipur
+</div>
+
+<div class="tags">
+<span class="tag">🏰 Heritage</span>
+<span class="tag">🌊 Lakes</span>
+<span class="tag">Palaces</span>
+</div>
+
+<a href="jaipur-jodhpur-udaipur-tour.html" class="view-btn">
+View Tour →
+</a>
+
+</div>
+</div>
+
+
+<!-- 04 -->
+<div class="tour-card" data-category="short heritage">
+
+<div class="tour-image"
+style="background-image:url('https://images.unsplash.com/photo-1599661046827-dacff0c3b5b1?auto=format&fit=crop&w=1000&q=85');">
+
+<span class="duration">03 Nights / 04 Days</span>
+
+</div>
+
+<div class="tour-body">
+
+<div class="location">JAIPUR • PUSHKAR • UDAIPUR</div>
+
+<h3>Jaipur Pushkar Udaipur Tour</h3>
+
+<p>
+Royal Jaipur, spiritual Pushkar and beautiful Udaipur in one journey.
+</p>
+
+<div class="route">
+Jaipur → Pushkar → Udaipur
+</div>
+
+<div class="tags">
+<span class="tag">🛕 Temples</span>
+<span class="tag">🏰 Forts</span>
+<span class="tag">Lakes</span>
+</div>
+
+<a href="jaipur-pushkar-udaipur-tour.html" class="view-btn">
+View Tour →
+</a>
+
+</div>
+</div>
+
+
+<!-- 05 -->
+<div class="tour-card" data-category="heritage desert">
+
+<div class="tour-image"
+style="background-image:url('https://images.unsplash.com/photo-1602643163989-1b2094f9c1b1?auto=format&fit=crop&w=1000&q=85');">
+
+<span class="duration">07 Nights / 08 Days</span>
+
+</div>
+
+<div class="tour-body">
+
+<div class="location">JAIPUR • BIKANER • PUSHKAR</div>
+
+<h3>Jaipur Bikaner Pushkar Tour</h3>
+
+<p>
+Explore royal Jaipur, historic Bikaner and sacred Pushkar.
+</p>
+
+<div class="route">
+Jaipur → Bikaner → Pushkar
+</div>
+
+<div class="tags">
+<span class="tag">🐪 Desert</span>
+<span class="tag">Forts</span>
+<span class="tag">Culture</span>
+</div>
+
+<a href="jaipur-bikaner-pushkar-tour.html" class="view-btn">
+View Tour →
+</a>
+
+</div>
+</div>
+
+
+<!-- 06 -->
+<div class="tour-card" data-category="golden heritage">
+
+<div class="tour-image"
+style="background-image:url('https://images.unsplash.com/photo-1599661046827-dacff0c3b5b1?auto=format&fit=crop&w=1000&q=85');">
+
+<span class="duration">09 Nights / 10 Days</span>
+
+</div>
+
+<div class="tour-body">
+
+<div class="location">DELHI • AGRA • JAIPUR • UDAIPUR</div>
+
+<h3>Golden Triangle With Ajmer Pushkar Udaipur</h3>
+
+<p>
+Combine the Golden Triangle with Ajmer, Pushkar and the lakes of Udaipur.
+</p>
+
+<div class="route">
+Delhi → Agra → Jaipur → Pushkar → Ajmer → Udaipur
+</div>
+
+<div class="tags">
+<span class="tag">Golden Triangle</span>
+<span class="tag">Spiritual</span>
+<span class="tag">Lakes</span>
+</div>
+
+<a href="golden-triangle-ajmer-pushkar-udaipur.html" class="view-btn">
+View Tour →
+</a>
+
+</div>
+</div>
+
+
+<!-- 07 -->
+<div class="tour-card" data-category="golden heritage">
+
+<div class="tour-image"
+style="background-image:url('https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1000&q=85');">
+
+<span class="duration">07 Nights / 08 Days</span>
+
+</div>
+
+<div class="tour-body">
+
+<div class="location">DELHI • AGRA • JAIPUR • UDAIPUR</div>
+
+<h3>Golden Triangle With Udaipur</h3>
+
+<p>
+Visit Delhi, Agra and Jaipur before discovering the royal lakes of Udaipur.
+</p>
+
+<div class="route">
+Delhi → Agra → Jaipur → Udaipur
+</div>
+
+<div class="tags">
+<span class="tag">Taj Mahal</span>
+<span class="tag">Forts</span>
+<span class="tag">Lakes</span>
+</div>
+
+<a href="golden-triangle-udaipur-tour.html" class="view-btn">
+View Tour →
+</a>
+
+</div>
+</div>
+
+
+<!-- 08 -->
+<div class="tour-card" data-category="heritage desert">
+
+<div class="tour-image"
+style="background-image:url('https://images.unsplash.com/photo-1603262110263-fb0112e7cc33?auto=format&fit=crop&w=1000&q=85');">
+
+<span class="duration">13 Nights / 14 Days</span>
+
+</div>
+
+<div class="tour-body">
+
+<div class="location">RAJASTHAN • AGRA • DELHI</div>
+
+<h3>Rajasthan Forts & Palaces</h3>
+
+<p>
+A grand Rajasthan journey through historic forts, palaces and desert cities.
+</p>
+
+<div class="route">
+Delhi → Bikaner → Jaisalmer → Jodhpur → Udaipur → Jaipur → Agra
+</div>
+
+<div class="tags">
+<span class="tag">Forts</span>
+<span class="tag">Palaces</span>
+<span class="tag">Desert</span>
+</div>
+
+<a href="rajasthan-forts-and-palaces.html" class="view-btn">
+View Tour →
+</a>
+
+</div>
+</div>
+
+
+<!-- 09 -->
+<div class="tour-card" data-category="heritage desert">
+
+<div class="tour-image"
+style="background-image:url('https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=1000&q=85');">
+
+<span class="duration">10 Nights / 11 Days</span>
+
+</div>
+
+<div class="tour-body">
+
+<div class="location">RURAL RAJASTHAN</div>
+
+<h3>Rural Rajasthan Heritage Tour</h3>
+
+<p>
+Discover village life, heritage stays, forts, desert landscapes and local culture.
+</p>
+
+<div class="route">
+Delhi → Mandawa → Bikaner → Jaisalmer → Jodhpur → Udaipur → Jaipur
+</div>
+
+<div class="tags">
+<span class="tag">Villages</span>
+<span class="tag">Desert</span>
+<span class="tag">Culture</span>
+</div>
+
+<a href="rural-rajasthan-heritage.html" class="view-btn">
+View Tour →
+</a>
+
+</div>
+</div>
+
+
+<!-- 10 -->
+<div class="tour-card" data-category="heritage desert">
+
+<div class="tour-image"
+style="background-image:url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1000&q=85');">
+
+<span class="duration">14 Nights / 15 Days</span>
+
+</div>
+
+<div class="tour-body">
+
+<div class="location">RAJASTHAN • NORTH INDIA</div>
+
+<h3>Rajasthan Heritage Tour</h3>
+
+<p>
+An extended heritage journey through Rajasthan's historic cities and royal landmarks.
+</p>
+
+<div class="route">
+Delhi → Rajasthan → Agra → Delhi
+</div>
+
+<div class="tags">
+<span class="tag">Heritage</span>
+<span class="tag">Forts</span>
+<span class="tag">Culture</span>
+</div>
+
+<a href="rajasthan-heritage-tour.html" class="view-btn">
+View Tour →
+</a>
+
+</div>
+</div>
+
+
+<!-- 11 -->
+<div class="tour-card" data-category="desert heritage">
+
+<div class="tour-image"
+style="background-image:url('https://images.unsplash.com/photo-1514222134-b57cbb8ce073?auto=format&fit=crop&w=1000&q=85');">
+
+<span class="duration">06 Nights / 07 Days</span>
+
+</div>
+
+<div class="tour-body">
+
+<div class="location">RAJASTHAN</div>
+
+<h3>Short Tour To Rajasthan</h3>
+
+<p>
+A compact Rajasthan circuit covering some of the state's famous royal cities.
+</p>
+
+<div class="route">
+Jaipur → Bikaner → Jaisalmer → Jodhpur
+</div>
+
+<div class="tags">
+<span class="tag">Short Tour</span>
+<span class="tag">Desert</span>
+<span class="tag">Forts</span>
+</div>
+
+<a href="short-tour-rajasthan.html" class="view-btn">
+View Tour →
+</a>
+
+</div>
+</div>
+
+
+<!-- 12 -->
+<div class="tour-card" data-category="heritage">
+
+<div class="tour-image"
+style="background-image:url('https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1000&q=85');">
+
+<span class="duration">07 Nights / 08 Days</span>
+
+</div>
+
+<div class="tour-body">
+
+<div class="location">DELHI • AGRA • RANTHAMBORE • JAIPUR</div>
+
+<h3>India Tiger Safari & Royal Cities</h3>
+
+<p>
+Combine the Golden Triangle with a wildlife safari experience in Ranthambore.
+</p>
+
+<div class="route">
+Delhi → Agra → Ranthambore → Jaipur → Delhi
+</div>
+
+<div class="tags">
+<span class="tag">Safari</span>
+<span class="tag">Wildlife</span>
+<span class="tag">Forts</span>
+</div>
+
+<a href="india-tiger-safari-royal-cities.html" class="view-btn">
+View Tour →
+</a>
+
+</div>
+</div>
+
+
+<!-- 13 -->
+<div class="tour-card" data-category="golden heritage">
+
+<div class="tour-image"
+style="background-image:url('https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1000&q=85');">
+
+<span class="duration">15 Nights / 16 Days</span>
+
+</div>
+
+<div class="tour-body">
+
+<div class="location">GOLDEN TRIANGLE • RAJASTHAN</div>
+
+<h3>Golden Triangle With Rajasthan Cities</h3>
+
+<p>
+A comprehensive journey combining India's Golden Triangle with major Rajasthan cities.
+</p>
+
+<div class="route">
+Delhi → Agra → Jaipur → Jodhpur → Udaipur → Pushkar
+</div>
+
+<div class="tags">
+<span class="tag">Golden Triangle</span>
+<span class="tag">Royal</span>
+<span class="tag">Heritage</span>
+</div>
+
+<a href="golden-triangle-rajasthan-cities.html" class="view-btn">
+View Tour →
+</a>
+
+</div>
+</div>
+
+
+<!-- 14 -->
+<div class="tour-card" data-category="heritage">
+
+<div class="tour-image"
+style="background-image:url('https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1000&q=85');">
+
+<span class="duration">15 Nights / 16 Days</span>
+
+</div>
+
+<div class="tour-body">
+
+<div class="location">NORTH INDIA • RAJASTHAN</div>
+
+<h3>Archaeological Study Tour</h3>
+
+<p>
+Explore India's historical monuments, archaeological sites and cultural heritage.
+</p>
+
+<div class="route">
+Delhi → Varanasi → Khajuraho → Agra → Jaipur → Jaisalmer → Udaipur
+</div>
+
+<div class="tags">
+<span class="tag">History</span>
+<span class="tag">Monuments</span>
+<span class="tag">Heritage</span>
+</div>
+
+<a href="archaeological-study-tour.html" class="view-btn">
+View Tour →
+</a>
+
+</div>
+</div>
+
+
+<!-- 15 -->
+<div class="tour-card" data-category="heritage">
+
+<div class="tour-image"
+style="background-image:url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=85');">
+
+<span class="duration">11 Nights / 12 Days</span>
+
+</div>
+
+<div class="tour-body">
+
+<div class="location">DELHI • SHIMLA • AGRA • JAIPUR • UDAIPUR</div>
+
+<h3>India Farms & Forts Tour</h3>
+
+<p>
+Explore India's landscapes, farms, heritage cities and famous forts.
+</p>
+
+<div class="route">
+Delhi → Shimla → Chandigarh → Agra → Bharatpur → Jaipur → Udaipur
+</div>
+
+<div class="tags">
+<span class="tag">Forts</span>
+<span class="tag">Farms</span>
+<span class="tag">Nature</span>
+</div>
+
+<a href="india-farms-and-forts.html" class="view-btn">
+View Tour →
+</a>
+
+</div>
+</div>
+
+
+<!-- 16 -->
+<div class="tour-card" data-category="heritage desert">
+
+<div class="tour-image"
+style="background-image:url('https://images.unsplash.com/photo-1524498250077-390f9e378fc0?auto=format&fit=crop&w=1000&q=85');">
+
+<span class="duration">14 Nights / 15 Days</span>
+
+</div>
+
+<div class="tour-body">
+
+<div class="location">RAJASTHAN • CENTRAL INDIA</div>
+
+<h3>Rajasthan Splendor Tour</h3>
+
+<p>
+A long-format heritage journey connecting Rajasthan with Khajuraho and Varanasi.
+</p>
+
+<div class="route">
+Delhi → Bikaner → Jaisalmer → Jodhpur → Jaipur → Agra → Khajuraho → Varanasi
+</div>
+
+<div class="tags">
+<span class="tag">Heritage</span>
+<span class="tag">Temples</span>
+<span class="tag">Desert</span>
+</div>
+
+<a href="rajasthan-splendor-tour.html" class="view-btn">
+View Tour →
+</a>
+
+</div>
+</div>
+
+
+<!-- 17 -->
+<div class="tour-card" data-category="desert heritage">
+
+<div class="tour-image"
+style="background-image:url('https://images.unsplash.com/photo-1518002054494-3a6f94352e9d?auto=format&fit=crop&w=1000&q=85');">
+
+<span class="duration">14 Nights / 15 Days</span>
+
+</div>
+
+<div class="tour-body">
+
+<div class="location">RAJASTHAN VILLAGES & HERITAGE</div>
+
+<h3>India Village Safari Tour</h3>
+
+<p>
+Experience rural Rajasthan, heritage properties, villages and traditional culture.
+</p>
+
+<div class="route">
+Delhi → Alsisar → Bikaner → Jaisalmer → Jodhpur → Udaipur → Jaipur → Agra
+</div>
+
+<div class="tags">
+<span class="tag">Village</span>
+<span class="tag">Culture</span>
+<span class="tag">Safari</span>
+</div>
+
+<a href="india-village-safari-tour.html" class="view-btn">
+View Tour →
+</a>
+
+</div>
+</div>
+
+
+<!-- 18 -->
+<div class="tour-card" data-category="golden heritage">
+
+<div class="tour-image"
+style="background-image:url('https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1000&q=85');">
+
+<span class="duration">08 Nights / 09 Days</span>
+
+</div>
+
+<div class="tour-body">
+
+<div class="location">DELHI • JAIPUR • AGRA • VARANASI</div>
+
+<h3>Golden Triangle With Khajuraho & Varanasi</h3>
+
+<p>
+Combine the Golden Triangle with the temples of Khajuraho and spiritual Varanasi.
+</p>
+
+<div class="route">
+Delhi → Jaipur → Agra → Khajuraho → Varanasi → Delhi
+</div>
+
+<div class="tags">
+<span class="tag">Temples</span>
+<span class="tag">Heritage</span>
+<span class="tag">Culture</span>
+</div>
+
+<a href="golden-triangle-khajuraho-varanasi.html" class="view-btn">
+View Tour →
+</a>
+
+</div>
+</div>
+
+
+<!-- 19 -->
+<div class="tour-card" data-category="golden heritage">
+
+<div class="tour-image"
+style="background-image:url('https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1000&q=85');">
+
+<span class="duration">12 Nights / 13 Days</span>
+
+</div>
+
+<div class="tour-body">
+
+<div class="location">DELHI • AGRA • RAJASTHAN</div>
+
+<h3>Golden Triangle With Royal Cities</h3>
+
+<p>
+Discover India's Golden Triangle followed by the royal cities of Rajasthan.
+</p>
+
+<div class="route">
+Delhi → Agra → Jaipur → Jodhpur → Udaipur → Pushkar
+</div>
+
+<div class="tags">
+<span class="tag">Royal</span>
+<span class="tag">Forts</span>
+<span class="tag">Palaces</span>
+</div>
+
+<a href="golden-triangle-royal-cities.html" class="view-btn">
+View Tour →
+</a>
+
+</div>
+</div>
+
+
+<!-- 20 -->
+<div class="tour-card" data-category="short heritage">
+
+<div class="tour-image"
+style="background-image:url('https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1000&q=85');">
+
+<span class="duration">03 Nights / 04 Days</span>
+
+</div>
+
+<div class="tour-body">
+
+<div class="location">UDAIPUR • RAJASTHAN</div>
+
+<h3>Udaipur Tour</h3>
+
+<p>
+Explore the City of Lakes, royal palaces, temples and beautiful lake surroundings.
+</p>
+
+<div class="route">
+Udaipur → City Palace → Lake Pichola
+</div>
+
+<div class="tags">
+<span class="tag">🌊 Lakes</span>
+<span class="tag">Palaces</span>
+<span class="tag">Culture</span>
+</div>
+
+<a href="udaipur-tour.html" class="view-btn">
+View Tour →
+</a>
+
+</div>
+</div>
+
+
+<!-- 21 -->
+<div class="tour-card" data-category="heritage desert">
+
+<div class="tour-image"
+style="background-image:url('https://images.unsplash.com/photo-1603262110263-fb0112e7cc33?auto=format&fit=crop&w=1000&q=85');">
+
+<span class="duration">14 Nights / 15 Days</span>
+
+</div>
+
+<div class="tour-body">
+
+<div class="location">RAJASTHAN • GOLDEN TRIANGLE</div>
+
+<h3>Rajasthan Heritage & Cultural Journey</h3>
+
+<p>
+Experience Rajasthan's royal architecture, desert landscapes and colourful cultural traditions.
+</p>
+
+<div class="route">
+Delhi → Mandawa → Bikaner → Jaisalmer → Jodhpur → Udaipur → Jaipur → Agra
+</div>
+
+<div class="tags">
+<span class="tag">Heritage</span>
+<span class="tag">Culture</span>
+<span class="tag">Desert</span>
+</div>
+
+<a href="rajasthan-heritage-tour.html" class="view-btn">
+View Tour →
+</a>
+
+</div>
+</div>
+
+
+</div>
+</section>
+
+
+<!-- ================= WHY ================= -->
+
+<section class="why">
+
+<div class="why-inner">
+
+<div class="why-title">
+
+<span>WHY TRAVEL WITH US</span>
+
+<h2>
+Travel Rajasthan Comfortably
+</h2>
+
+</div>
+
+<div class="why-grid">
+
+<div class="why-card">
+<div class="why-icon">🚐</div>
+<h3>Comfortable Vehicles</h3>
+<p>
+Private cars and Tempo Travellers suitable for families and groups.
+</p>
+</div>
+
+<div class="why-card">
+<div class="why-icon">🧭</div>
+<h3>Flexible Itineraries</h3>
+<p>
+Customize destinations, dates, sightseeing and hotel preferences.
+</p>
+</div>
+
+<div class="why-card">
+<div class="why-icon">👨‍✈️</div>
+<h3>Experienced Drivers</h3>
+<p>
+Comfortable road travel with experienced professional drivers.
+</p>
+</div>
+
+<div class="why-card">
+<div class="why-icon">💬</div>
+<h3>Easy Booking</h3>
+<p>
+Quick enquiry and quotation through phone or WhatsApp.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+<h2>
+Can't Find Your Perfect Rajasthan Tour?
+</h2>
+
+<p>
+Tell us your travel dates, group size and destinations.
+We can create a customized Rajasthan itinerary for you.
+</p>
+
+<a href="index.html#contact">
+Create My Custom Trip →
+</a>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-grid">
+
+<div class="footer-col">
+
+<h3>
+✈ Krishna Travelers India
+</h3>
+
+<p>
+Comfortable journeys and memorable travel experiences across India.
+</p>
+
+<p>
+Private Rajasthan tours, group travel and customized itineraries.
+</p>
+
+</div>
+
+
+<div class="footer-col">
+
+<h3>
+Quick Links
+</h3>
+
+<a href="index.html">Home</a>
+
+<a href="index.html#about">About Us</a>
+
+<a href="rajasthan-tours.html">Rajasthan Tours</a>
+
+<a href="index.html#vehicles">Our Vehicles</a>
+
+<a href="index.html#contact">Contact</a>
+
+</div>
+
+
+<div class="footer-col">
+
+<h3>
+Contact
+</h3>
+
+<p>
+📞
+<a href="tel:+918587994018">
++91 85879 94018
+</a>
+</p>
+
+<p>
+✉
+<a href="mailto:krishnatravelersindia@gmail.com">
+krishnatravelersindia@gmail.com
+</a>
+</p>
+
+<p>
+📍 C-4/53, Yamuna Vihar,<br>
+Delhi - 110053
+</p>
+
+</div>
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Krishna Travelers India. All Rights Reserved.
+
+</div>
+
+</footer>
+
+
+<!-- ================= WHATSAPP ================= -->
+
+<a
+href="https://wa.me/918587994018"
+target="_blank"
+class="whatsapp"
+aria-label="WhatsApp">
+💬
+</a>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+function filterTours(category,button){
+
+    const cards = document.querySelectorAll(".tour-card");
+    const buttons = document.querySelectorAll(".filter-btn");
+
+    buttons.forEach(btn=>{
+        btn.classList.remove("active");
+    });
+
+    button.classList.add("active");
+
+    cards.forEach(card=>{
+
+        if(category === "all"){
+            card.style.display = "flex";
+            return;
+        }
+
+        const cardCategories = card.getAttribute("data-category");
+
+        if(cardCategories && cardCategories.includes(category)){
+            card.style.display = "flex";
+        }else{
+            card.style.display = "none";
+        }
+
+    });
+
+}
+
+</script>
+
+</body>
+>>>>>>> 3b93194 (my first commit)
 </html>
